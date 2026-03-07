@@ -1,191 +1,439 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"
+    />
 
-    <link rel = "stylesheet" type = "text/css" href = "./css/sub_common.css"/>
-    
-    <meta name="generator" content="Gatsby 4.3.0"/>
+    <link rel="stylesheet" type="text/css" href="./css/sub_common.css" />
+
+    <meta name="generator" content="Gatsby 4.3.0" />
     <noscript>
       <style>
-        .gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}
+        .gatsby-image-wrapper noscript [data-main-image] {
+          opacity: 1 !important;
+        }
+        .gatsby-image-wrapper [data-placeholder-image] {
+          opacity: 0 !important;
+        }
       </style>
     </noscript>
     <script type="module">
-      const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;
-      e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);
+      const e =
+        "undefined" != typeof HTMLImageElement &&
+        "loading" in HTMLImageElement.prototype;
+      e &&
+        document.body.addEventListener(
+          "load",
+          function (e) {
+            if (void 0 === e.target.dataset.mainImage) return;
+            if (void 0 === e.target.dataset.gatsbyImageSsr) return;
+            const t = e.target;
+            let a = null,
+              n = t;
+            for (; null === a && n; )
+              (void 0 !== n.parentNode.dataset.gatsbyImageWrapper &&
+                (a = n.parentNode),
+                (n = n.parentNode));
+            const o = a.querySelector("[data-placeholder-image]"),
+              r = new Image();
+            ((r.src = t.currentSrc),
+              r
+                .decode()
+                .catch(() => {})
+                .then(() => {
+                  ((t.style.opacity = 1),
+                    o &&
+                      ((o.style.opacity = 0),
+                      (o.style.transition = "opacity 500ms linear")));
+                }));
+          },
+          !0,
+        );
     </script>
-    <meta name="theme-color" content="#51247a"/>
-    <script type = "text/javascript" src = "./js/common.js"></script>
+    <meta name="theme-color" content="#51247a" />
+    <script type="text/javascript" src="./js/common.js"></script>
     <title data-react-helmet="true">ADMA 2024 - Sydney, Australia</title>
-
-    
-
   </head>
   <body>
     <div id="___gatsby">
-      <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+      <div style="outline: none" tabindex="-1" id="gatsby-focus-wrapper">
         <div class="w-full min-h-screen flex flex-col" data-is-root-path="true">
           <header>
             <nav class="j_navbar j_uq_color_bg">
               <div class="max-w-9xl mx-auto px-2 sm:px-6 lg:px-12">
                 <div class="relative flex items-center justify-between h-16">
-                  <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
-                    <button onclick = "show_mobile_nav()" type="button" class="py-2 pl-3 pr-3 ml-4 inline-flex items-center justify-center rounded-md  text-gray-50 focus:outline-none focus:ring-1 focus:ring-inset  focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                  <div
+                    class="absolute inset-y-0 left-0 flex items-center md:hidden"
+                  >
+                    <button
+                      onclick="show_mobile_nav()"
+                      type="button"
+                      class="py-2 pl-3 pr-3 ml-4 inline-flex items-center justify-center rounded-md text-gray-50 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
+                      aria-controls="mobile-menu"
+                      aria-expanded="false"
+                    >
                       <span class="sr-only">Open main menu</span>
-                      <svg id = "menu_icon_1" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                        </path>
+                      <svg
+                        id="menu_icon_1"
+                        class="block h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        ></path>
                       </svg>
-                      <svg id = "menu_icon_2" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
+                      <svg
+                        id="menu_icon_2"
+                        class="hidden h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        ></path>
                       </svg>
                     </button>
                   </div>
-                  <div class="flex-1 flex items-center justify-center md:items-stretch md:justify-between">
-                    <a aria-current="page" title="ADMA2024 - Sydney, Australia" class="" href="/">
-                      <div class="flex-shrink-0 items-center lg:ml-8 flex md:hidden bp3:flex">
+                  <div
+                    class="flex-1 flex items-center justify-center md:items-stretch md:justify-between"
+                  >
+                    <a
+                      aria-current="page"
+                      title="ADMA2024 - Sydney, Australia"
+                      class=""
+                      href="/"
+                    >
+                      <div
+                        class="flex-shrink-0 items-center lg:ml-8 flex md:hidden bp3:flex"
+                      >
                         <!-- logo img -->
-                        <div style = "height: 50px; width: 168px;">
-                          <img src="./img/logo.png" alt = "logo">
+                        <div style="height: 50px; width: 168px">
+                          <img src="./img/logo.png" alt="logo" />
                         </div>
                       </div>
                     </a>
                     <div class="hidden md:flex sm:ml-8 items-center">
                       <div class="flex space-x-4">
-                        <a aria-current="page" class="flex item-center" title="Home" href="https://adma2024.github.io">
-                          <span class=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle">Home</span>
+                        <a
+                          aria-current="page"
+                          class="flex item-center"
+                          title="Home"
+                          href="https://adma2024.github.io"
+                        >
+                          <span
+                            class="text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle"
+                            >Home</span
+                          >
                         </a>
 
                         <div class="group dropdown inline-block relative">
-                          <button class=" text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default">
+                          <button
+                            class="text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default"
+                          >
                             <span class="mr-1">Committees</span>
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-                              </path>
+                            <svg
+                              class="fill-current h-4 w-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                              ></path>
                             </svg>
                           </button>
-                          <div class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80">
-                            <div class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
+                          <div
+                            class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80"
+                          >
+                            <div
+                              class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+                            >
                               <div class="max-h-safeHeight overflow-y-auto">
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Steering Commitee" href="/steering_committee.html">Steering Committee</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Poster Presentation Papers" href="/organisation_committee.html">Organisation Committee</a>
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Steering Commitee"
+                                  href="/steering_committee.html"
+                                  >Steering Committee</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Poster Presentation Papers"
+                                  href="/organisation_committee.html"
+                                  >Organisation Committee</a
+                                >
                               </div>
                             </div>
                           </div>
                         </div>
 
-
                         <div class="group dropdown inline-block relative">
-                          <button class=" text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default">
+                          <button
+                            class="text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default"
+                          >
                             <span class="mr-1">Attending</span>
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-                              </path>
+                            <svg
+                              class="fill-current h-4 w-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                              ></path>
                             </svg>
                           </button>
-                          <div class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80">
-                            <div class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
-                                <div class="max-h-safeHeight overflow-y-auto">
-                                    <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Registration Guidelines" href="/registration_guidelines.html">Registration Guidelines</a> -->
-                                    <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Programme" href="/programme.html">Programme</a> -->
-                                    <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="VISA" href="/visa.html">VISA</a> -->
-                                    <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Attractions" href="/programme.html">Program</a>
-                                    <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Attractions" href="/registration_guidelines.html">Registration Guidelines</a>
-                                    <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Attractions" href="/visa.html">Visa Information</a>
-                                    <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Accommodation" href="/accommodation.html">Local Accommodation</a>
-                                    <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Attractions" href="/attractions.html">Attractions</a> 
-  
-                                    <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Speakers" href="/highlights.html">Highlights</a> -->
-                        
-                                    <!-- <div class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Accepted Papers">
+                          <div
+                            class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80"
+                          >
+                            <div
+                              class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+                            >
+                              <div class="max-h-safeHeight overflow-y-auto">
+                                <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Registration Guidelines" href="/registration_guidelines.html">Registration Guidelines</a> -->
+                                <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Programme" href="/programme.html">Programme</a> -->
+                                <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="VISA" href="/visa.html">VISA</a> -->
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Attractions"
+                                  href="/programme.html"
+                                  >Program</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Attractions"
+                                  href="/registration_guidelines.html"
+                                  >Registration Guidelines</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Attractions"
+                                  href="/visa.html"
+                                  >Visa Information</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Accommodation"
+                                  href="/accommodation.html"
+                                  >Local Accommodation</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Attractions"
+                                  href="/attractions.html"
+                                  >Attractions</a
+                                >
+
+                                <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Speakers" href="/highlights.html">Highlights</a> -->
+
+                                <!-- <div class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Accepted Papers">
                                       Accepted Papers
                                       <div class=" accepted-papers-menu hidden absolute bg-white py-2 mt-2 border rounded-lg shadow-lg" style="width: 20rem;">
                                           <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" href="/accepted_papers_oral.html">Oral Presentation Papers</a>
                                           <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" href="/accepted_papers_poster.html">Poster Presentation Papers</a>
                                       </div>
                                   </div> -->
-                                </div>
+                              </div>
                             </div>
-                        </div>
-                        
+                          </div>
                         </div>
 
                         <div class="group dropdown inline-block relative">
-                          <button class=" text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default">
+                          <button
+                            class="text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default"
+                          >
                             <span class="mr-1">Invited Speakers</span>
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-                              </path>
+                            <svg
+                              class="fill-current h-4 w-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                              ></path>
                             </svg>
                           </button>
-                          <div class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80">
-                            <div class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
+                          <div
+                            class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80"
+                          >
+                            <div
+                              class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+                            >
                               <div class="max-h-safeHeight overflow-y-auto">
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Steering Commitee" href="/keynote_speakers.html">Keynote Speakers</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Steering Commitee" href="/20th-Anniversary-Panel-Discussion.html">20th Anniversary Panel Discussion</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Steering Commitee" href="/Women_Scientist_Panel.html">Distinguished Women Scientists Panel Discussion</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Steering Commitee" href="/Young_Scientists_Panel.html">Distinguished Young Scientist Panel Discussion</a>
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Steering Commitee"
+                                  href="/keynote_speakers.html"
+                                  >Keynote Speakers</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Steering Commitee"
+                                  href="/20th-Anniversary-Panel-Discussion.html"
+                                  >20th Anniversary Panel Discussion</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Steering Commitee"
+                                  href="/Women_Scientist_Panel.html"
+                                  >Distinguished Women Scientists Panel
+                                  Discussion</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Steering Commitee"
+                                  href="/Young_Scientists_Panel.html"
+                                  >Distinguished Young Scientist Panel
+                                  Discussion</a
+                                >
                               </div>
                             </div>
                           </div>
                         </div>
 
-                        
                         <div class="group dropdown inline-block relative">
-                          <button class=" text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default">
+                          <button
+                            class="text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default"
+                          >
                             <span class="mr-1">Grant &amp; Awards</span>
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-                              </path>
+                            <svg
+                              class="fill-current h-4 w-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                              ></path>
                             </svg>
                           </button>
-                          <div class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80">
-                            <div class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
+                          <div
+                            class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80"
+                          >
+                            <div
+                              class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+                            >
                               <div class="max-h-safeHeight overflow-y-auto">
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Steering Commitee" href="/travelGrants.html">Travel Grant Program</a>
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Steering Commitee"
+                                  href="/travelGrants.html"
+                                  >Travel Grant Program</a
+                                >
                               </div>
                             </div>
                           </div>
                         </div>
 
-
                         <div class="group dropdown inline-block relative">
-                          <button class=" text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default">
-                            <span class="mr-1">Submission Guidelines</span>                
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-                              </path>
+                          <button
+                            class="text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default"
+                          >
+                            <span class="mr-1">Submission Guidelines</span>
+                            <svg
+                              class="fill-current h-4 w-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                              ></path>
                             </svg>
                           </button>
-                          <div class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80">
-                            <div class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
+                          <div
+                            class="dropdown-menu absolute hidden text-gray-800 pt-1 w-80"
+                          >
+                            <div
+                              class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
+                            >
                               <div class="max-h-safeHeight overflow-y-auto">
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Important Dates" href="/important_date.html">Important Dates</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Camera-Ready Guidelines" href="/camera_ready_guidelines.html">Camera-Ready Guidelines</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Sponsorships" href="/Calls_for_Sponsorships.html">Call for Sponsorships</a>
-																<div class="w-full py-1">
-                                  <div class="w-full bg-gray-200" style="height:1px">
-                                  </div>
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Important Dates"
+                                  href="/important_date.html"
+                                  >Important Dates</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Camera-Ready Guidelines"
+                                  href="/camera_ready_guidelines.html"
+                                  >Camera-Ready Guidelines</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Call for Sponsorships"
+                                  href="/Calls_for_Sponsorships.html"
+                                  >Call for Sponsorships</a
+                                >
+                                <div class="w-full py-1">
+                                  <div
+                                    class="w-full bg-gray-200"
+                                    style="height: 1px"
+                                  ></div>
                                 </div>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Papers" href="/call_for_papers.html">Call for Papers</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Papers" href="/call_for_industry_track_papers.html">Call for Industry Track Papers</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Special Session Proposals" href="/call_special_sessions.html">Call for Special Session Proposals</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Special Session CFPs" href="/SpecialSessionCFPs.html">Special Session CFPs</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Calls for Tutorials" href="/TutorialsCallforProposals.html">Call for Tutorials</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Calls for Encore Presentations" href="/CallsforEncorePosterPresentation.html">Call for Encore Talks</a>
-                                <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Posters" href="/call_for_posters.html">Call for Posters</a>
-                                <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Camera Ready Guidelines" href="/camera_ready_guidelines.html">Camera Ready Guidelines</a> -->                        
-                                <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Presentation Guidelines" href="/presentation_guideline.html">Presentation Guidelines</a> -->                                
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Call for Papers"
+                                  href="/call_for_papers.html"
+                                  >Call for Papers</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Call for Papers"
+                                  href="/call_for_industry_track_papers.html"
+                                  >Call for Industry Track Papers</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Call for Special Session Proposals"
+                                  href="/call_special_sessions.html"
+                                  >Call for Special Session Proposals</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Special Session CFPs"
+                                  href="/SpecialSessionCFPs.html"
+                                  >Special Session CFPs</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Calls for Tutorials"
+                                  href="/TutorialsCallforProposals.html"
+                                  >Call for Tutorials</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Calls for Encore Presentations"
+                                  href="/CallsforEncorePosterPresentation.html"
+                                  >Call for Encore Talks</a
+                                >
+                                <a
+                                  class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                                  title="Call for Posters"
+                                  href="/call_for_posters.html"
+                                  >Call for Posters</a
+                                >
+                                <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Camera Ready Guidelines" href="/camera_ready_guidelines.html">Camera Ready Guidelines</a> -->
+                                <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Presentation Guidelines" href="/presentation_guideline.html">Presentation Guidelines</a> -->
                                 <!-- <a class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall" title="Call for Grand Challenge Proposals" href="/submission_guidelines.html">Submission Guidelines</span></a> -->
                               </div>
                             </div>
                           </div>
                         </div>
-                         <!-- <a aria-current="page" class="flex item-center" title="Camera Ready Guidelines" href="/camera_ready_guidelines.html">
+                        <!-- <a aria-current="page" class="flex item-center" title="Camera Ready Guidelines" href="/camera_ready_guidelines.html">
                           <span class=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle">Camera Ready Guidelines</span>
                         </a> -->
                         <!-- <div class="group dropdown inline-block relative">
@@ -206,16 +454,17 @@
                           </div>
                         </div> -->
 
-
-						
-						            <a aria-current="page" class="flex item-center" title="Speakers" href="/JournalSpecialIssues.html">
-                          <span class=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle">Special Issues</span>
+                        <a
+                          aria-current="page"
+                          class="flex item-center"
+                          title="Speakers"
+                          href="/JournalSpecialIssues.html"
+                        >
+                          <span
+                            class="text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle"
+                            >Special Issues</span
+                          >
                         </a>
-
-
-
-
-
 
                         <!-- <a aria-current="page" class="flex item-center" title="Speakers" href="/keynote_speakers.html">
                           <span class=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle">Keynote Speakers</span>
@@ -223,8 +472,16 @@
                         <!-- <a aria-current="page" class="flex item-center" title="Speakers" href="/highlights.html">
                           <span class=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle">Highlights</span>
                         </a> -->
-                        <a aria-current="page" class="flex item-center" title="Previous ADMA" href="/previous_adma.html">
-                          <span class=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle">Previous ADMA</span>
+                        <a
+                          aria-current="page"
+                          class="flex item-center"
+                          title="Previous ADMA"
+                          href="/previous_adma.html"
+                        >
+                          <span
+                            class="text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle"
+                            >Previous ADMA</span
+                          >
                         </a>
                       </div>
                     </div>
@@ -233,39 +490,121 @@
               </div>
 
               <div class="hidden" id="mobile_menu">
-               <div id = "mobile_menu_section_1" class="px-2 pt-2 pb-3 space-y-1" style = "visibility: visible;">
-                  <a aria-current="page" class="flex item-center w-full" title="Home" href="https://adma2024.github.io">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block bg-menuSelected rounded-md text-base font-semibold font-headingStyle">Home</span>
+                <div
+                  id="mobile_menu_section_1"
+                  class="px-2 pt-2 pb-3 space-y-1"
+                  style="visibility: visible"
+                >
+                  <a
+                    aria-current="page"
+                    class="flex item-center w-full"
+                    title="Home"
+                    href="https://adma2024.github.io"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block bg-menuSelected rounded-md text-base font-semibold font-headingStyle"
+                      >Home</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Important Dates" href="/important_date.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Important Dates</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Important Dates"
+                    href="/important_date.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Important Dates</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Camera Ready Guidelines" href="/camera_ready_guidelines.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Camera-Ready Guidelines</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Camera Ready Guidelines"
+                    href="/camera_ready_guidelines.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Camera-Ready Guidelines</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Important Dates" href="/Calls_for_Sponsorships.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Call for Sponsorships</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Important Dates"
+                    href="/Calls_for_Sponsorships.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Call for Sponsorships</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Call for Papers" href="/call_for_papers.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Call for Papers</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Call for Papers"
+                    href="/call_for_papers.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Call for Papers</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Call for Papers" href="/call_for_industry_track_papers.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Call for Industry Track Papers</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Call for Papers"
+                    href="/call_for_industry_track_papers.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Call for Industry Track Papers</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Call for Special Session Proposals" href="/call_special_sessions.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Call for Special Sessions Proposals</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Call for Special Session Proposals"
+                    href="/call_special_sessions.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Call for Special Sessions Proposals</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Call for Special Session Proposals" href="/SpecialSessionCFPs.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Special Session CFPs</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Call for Special Session Proposals"
+                    href="/SpecialSessionCFPs.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Special Session CFPs</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Call for Special Session Proposals" href="/TutorialsCallforProposals.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Call for Tutorials</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Call for Special Session Proposals"
+                    href="/TutorialsCallforProposals.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Call for Tutorials</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Call for Special Session Proposals" href="/CallsforEncorePosterPresentation.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Call for Encore Talks</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Call for Special Session Proposals"
+                    href="/CallsforEncorePosterPresentation.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Call for Encore Talks</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Call for Special Session Proposals" href="/call_for_posters.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Call for Posters</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Call for Special Session Proposals"
+                    href="/call_for_posters.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Call for Posters</span
+                    >
                   </a>
                   <!-- <a class="flex item-center w-full" title="Camera Ready Guidelines" href="/camera_ready_guidelines.html">
                     <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Camera Ready Guidelines</span>
@@ -282,52 +621,162 @@
                   <a class="flex item-center w-full" title="Accepted Papers" href="/accepted_papers_poster.html">
                     <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Poster Presentation Papers</span>
                   </a> -->
-                  <a class="flex item-center w-full" title="Organisation" href="/steering_committee.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Steering Committee</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Organisation"
+                    href="/steering_committee.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Steering Committee</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Organisation" href="/organisation_committee.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Organisation Committee</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Organisation"
+                    href="/organisation_committee.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Organisation Committee</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="more" onclick = "mobile_menu_shift(1)">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">More...</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="more"
+                    onclick="mobile_menu_shift(1)"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >More...</span
+                    >
                   </a>
                 </div>
-                <div id = "mobile_menu_section_2" class="px-2 pt-2 pb-3 space-y-1" style = "display: none;">
-                  <a aria-current="page" class="flex item-center w-full" title="Home" href="https://adma2024.github.io">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block bg-menuSelected rounded-md text-base font-semibold font-headingStyle">Home</span>
+                <div
+                  id="mobile_menu_section_2"
+                  class="px-2 pt-2 pb-3 space-y-1"
+                  style="display: none"
+                >
+                  <a
+                    aria-current="page"
+                    class="flex item-center w-full"
+                    title="Home"
+                    href="https://adma2024.github.io"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block bg-menuSelected rounded-md text-base font-semibold font-headingStyle"
+                      >Home</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Registration Guidelines" href="/JournalSpecialIssues.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Special Issues</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Registration Guidelines"
+                    href="/JournalSpecialIssues.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Special Issues</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Registration Guidelines" href="/keynote_speakers.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Keynote Speakers</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Registration Guidelines"
+                    href="/keynote_speakers.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Keynote Speakers</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Registration Guidelines" href="/20th-Anniversary-Panel-Discussion.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">20th Anniversary Panel Discussion</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Registration Guidelines"
+                    href="/20th-Anniversary-Panel-Discussion.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >20th Anniversary Panel Discussion</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Registration Guidelines" href="/Women_Scientist_Panel.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Distinguished Women Scientists Panel Discussion</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Registration Guidelines"
+                    href="/Women_Scientist_Panel.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Distinguished Women Scientists Panel Discussion</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Registration Guidelines" href="/Young_Scientists_Panel.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Distinguished Young Scientist Panel Discussion</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Registration Guidelines"
+                    href="/Young_Scientists_Panel.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Distinguished Young Scientist Panel Discussion</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Registration Guidelines" href="/travelGrants.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Travel Grant Program</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Registration Guidelines"
+                    href="/travelGrants.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Travel Grant Program</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="programme" href="/programme.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Program</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="programme"
+                    href="/programme.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Program</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="Registration Guidelines" href="/registration_guidelines.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Registration Guidelines</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Registration Guidelines"
+                    href="/registration_guidelines.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Registration Guidelines</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="VISA" href="/visa.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">VISA</span>
-                  </a> 
-                <a class="flex item-center w-full" title="Accommondation" href="/accommodation.html">
-                  <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Local Accommondations</span>
-                </a>
-                  <a class="flex item-center w-full" title="Attractions" href="/attractions.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Attractions</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="VISA"
+                    href="/visa.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >VISA</span
+                    >
+                  </a>
+                  <a
+                    class="flex item-center w-full"
+                    title="Accommondation"
+                    href="/accommodation.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Local Accommondations</span
+                    >
+                  </a>
+                  <a
+                    class="flex item-center w-full"
+                    title="Attractions"
+                    href="/attractions.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Attractions</span
+                    >
                   </a>
                   <!-- <a class="flex item-center w-full" title="Programme" href="/programme.html">
                     <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Programme</span>
@@ -338,94 +787,194 @@
                   <a class="flex item-center w-full" title="Speakers" href="/highlights.html">
                     <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Highlights</span>
                   </a> -->
-                  <a class="flex item-center w-full" title="Previous ADMA" href="/previous_adma.html">
-                    <span class="pl-8 pr-4 py-2 w-full text-white  block rounded-md text-base font-semibold font-headingStyle">Previous ADMA</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="Previous ADMA"
+                    href="/previous_adma.html"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Previous ADMA</span
+                    >
                   </a>
-                  <a class="flex item-center w-full" title="more" onclick = "mobile_menu_shift(0)">
-                    <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Back...</span>
+                  <a
+                    class="flex item-center w-full"
+                    title="more"
+                    onclick="mobile_menu_shift(0)"
+                  >
+                    <span
+                      class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
+                      >Back...</span
+                    >
                   </a>
                 </div>
               </div>
-
             </nav>
           </header>
-          <div class="w-full h-16">
-          </div>
+          <div class="w-full h-16"></div>
           <main class="w-full">
-            <div class="global-wrapper pb-12" style="max-width:59rem" id="welcome">
+            <div
+              class="global-wrapper pb-12"
+              style="max-width: 59rem"
+              id="welcome"
+            >
               <header class="px-0 sm:px-7">
-                <h2 class="pt-9 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold">ADMA2024 Call for Special Sessions</h2>
+                <h2
+                  class="pt-9 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold"
+                >
+                  ADMA2024 Call for Special Sessions
+                </h2>
                 <p class="mb-4 justified-text">
-                  The 20th International Conference on Advanced Data Mining and Applications (ADMA2024) will be held in Sydney, Australia during 3<sup>rd</sup> ~ 5<sup>th</sup> December 2024. ADMA2024 aims at bringing together the experts on data mining from around the world, and providing a leading international forum for the dissemination of original research findings in data mining, spanning applications, algorithms, software and systems, as well as different applied disciplines with potential in data mining. <br><br>
-                  It is our great pleasure to invite you to participate in this premier annual event through organising Special Sessions on particular research and applications of advanced data mining. ADMA special sessions are an important part of the main conference program, aiming to promote emerging and cross-disciplinary data mining research areas that are not well established at an advanced level or require intensive domain specific expertise, e.g., bioinformatics, healthcare, cyber security, transportation, manufacturing, finance, and commerce. The same evaluation criteria and quality control apply as for the main conference, but the papers must adhere to the area of the special session they are submitted to, and the reviewers should be experts in that area. All accepted special session papers will be included in the ADMA2024 main conference proceedings.<br><br>
-                  We welcome proposals of organising special sessions to initiate and strengthen interaction and cooperation among different communities. Special session proposals will be reviewed based on their topic quality and compliance to the submission guideline as well as their relationship to the main conference themes and topics. Preference may be given to timely topics that are critical for data mining and applications, inspire highly interactive discussions, and showcase the impact of advanced data mining techniques.
+                  The 20th International Conference on Advanced Data Mining and
+                  Applications (ADMA2024) will be held in Sydney, Australia
+                  during 3<sup>rd</sup> ~ 5<sup>th</sup> December 2024. ADMA2024
+                  aims at bringing together the experts on data mining from
+                  around the world, and providing a leading international forum
+                  for the dissemination of original research findings in data
+                  mining, spanning applications, algorithms, software and
+                  systems, as well as different applied disciplines with
+                  potential in data mining. <br /><br />
+                  It is our great pleasure to invite you to participate in this
+                  premier annual event through organising Special Sessions on
+                  particular research and applications of advanced data mining.
+                  ADMA special sessions are an important part of the main
+                  conference program, aiming to promote emerging and
+                  cross-disciplinary data mining research areas that are not
+                  well established at an advanced level or require intensive
+                  domain specific expertise, e.g., bioinformatics, healthcare,
+                  cyber security, transportation, manufacturing, finance, and
+                  commerce. The same evaluation criteria and quality control
+                  apply as for the main conference, but the papers must adhere
+                  to the area of the special session they are submitted to, and
+                  the reviewers should be experts in that area. All accepted
+                  special session papers will be included in the ADMA2024 main
+                  conference proceedings.<br /><br />
+                  We welcome proposals of organising special sessions to
+                  initiate and strengthen interaction and cooperation among
+                  different communities. Special session proposals will be
+                  reviewed based on their topic quality and compliance to the
+                  submission guideline as well as their relationship to the main
+                  conference themes and topics. Preference may be given to
+                  timely topics that are critical for data mining and
+                  applications, inspire highly interactive discussions, and
+                  showcase the impact of advanced data mining techniques.
                 </p>
-                
-                <h2 class = "pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Proposal Submission</h2>
-                <p class = "mb-4">The Special Session Proposal submission portal: <a href = "https://cmt3.research.microsoft.com/ADMA2024" style = "color:#6200be;"> https://cmt3.research.microsoft.com/ADMA2024</a>.
-                  <br><br> 
-                  When creating a special session proposal submission, the proposer should select the “Proposal &amp; Abstract Track” first. After populating the submission form with the information like title, abstract, and authors (i.e., organisers), the proposer should tick the “Special Session Proposal” option under “SUBJECT AREAS”. Following this step correctly is important to ensure that the proposal goes to the Special Session Track Chairs for review.
-                </p>
-                  
 
-                  <!-- The Special Session proposal submission portal: <br> <a href = 'https://cmt3.research.microsoft.com/ADMA2024' style = 'color:#6200be;'> https://cmt3.research.microsoft.com/ADMA2024</a>.
+                <h2
+                  class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold"
+                >
+                  Proposal Submission
+                </h2>
+                <p class="mb-4">
+                  The Special Session Proposal submission portal:
+                  <a
+                    href="https://cmt3.research.microsoft.com/ADMA2024"
+                    style="color: #6200be"
+                  >
+                    https://cmt3.research.microsoft.com/ADMA2024</a
+                  >. <br /><br />
+                  When creating a special session proposal submission, the
+                  proposer should select the “Proposal &amp; Abstract Track”
+                  first. After populating the submission form with the
+                  information like title, abstract, and authors (i.e.,
+                  organisers), the proposer should tick the “Special Session
+                  Proposal” option under “SUBJECT AREAS”. Following this step
+                  correctly is important to ensure that the proposal goes to the
+                  Special Session Track Chairs for review.
+                </p>
+
+                <!-- The Special Session proposal submission portal: <br> <a href = 'https://cmt3.research.microsoft.com/ADMA2024' style = 'color:#6200be;'> https://cmt3.research.microsoft.com/ADMA2024</a>.
                   <br><br>
                   When creating a special session proposal submission, the proposer should select the “Proposal & Abstract Track” first. After populating the submission form with information like title, abstract, and authors, the proposer should tick the “Special Session Proposal” option under “SUBJECT AREAS”. Following this step correctly is important to ensure that the proposal go the Special Session Track Chairs for review.”
                   </b></p> -->
-                
+
                 <!-- <p class = 'mb-4'>Submission Deadline <b>30<sup>th</sup> Sep, 2022 (AoE)</b></p> -->
-                <h2 class = "pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Important Dates</h2>
+                <h2
+                  class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold"
+                >
+                  Important Dates
+                </h2>
 
-                <table cellpadding = "5" style = "border-collapse: collapse;">
+                <table cellpadding="5" style="border-collapse: collapse">
                   <tbody>
-
-                    
-
-                      <tr>
-                      <td class="j_important_dates_table_borders j_important_dates_table_column_1"><b>&nbsp;&nbsp;Special Session Proposal Deadline</b></td>
-                      <td class="j_important_dates_table_borders"><br>
-                     <s> 30<sup>th</sup> April, 2024 (AoE) (Saturday)</s>
-                        <br><br>
-                      </td>
-                    </tr>
-
-
                     <tr>
-                      <td class="j_important_dates_table_borders j_important_dates_table_column_1"><b>&nbsp;&nbsp;Special Session Proposal Notification Date</b></td>
-                      <td class="j_important_dates_table_borders"><br>
-                         <s> Within 2 weeks after submission</s>
-                        <br><br>
+                      <td
+                        class="j_important_dates_table_borders j_important_dates_table_column_1"
+                      >
+                        <b>&nbsp;&nbsp;Special Session Proposal Deadline</b>
                       </td>
-                    </tr>
-
-
-                    <tr>
-                      <td class="j_important_dates_table_borders j_important_dates_table_column_1"><b>&nbsp;&nbsp;Special Session Submission Deadline</b></td>
-                      <td class="j_important_dates_table_borders"><br>
-                           <s> 15<sup>th</sup> June, 2024 (AoE) (Saturday) <b>20<sup>th</sup> July, 2024 (AoE) (Saturday)</b></s>
-                        <br><br>
+                      <td class="j_important_dates_table_borders">
+                        <br />
+                        <s> 30<sup>th</sup> April, 2024 (AoE) (Saturday)</s>
+                        <br /><br />
                       </td>
                     </tr>
 
                     <tr>
-                      <td class="j_important_dates_table_borders j_important_dates_table_column_1"><b>&nbsp;&nbsp;Special Session Notification Date</b></td>
-                      <td class="j_important_dates_table_borders"><br>
-                        <s><b> 3<sup>rd</sup> September, 2024 (AoE) (Tuesday)</b></s>
-                        <br><br>
+                      <td
+                        class="j_important_dates_table_borders j_important_dates_table_column_1"
+                      >
+                        <b
+                          >&nbsp;&nbsp;Special Session Proposal Notification
+                          Date</b
+                        >
+                      </td>
+                      <td class="j_important_dates_table_borders">
+                        <br />
+                        <s> Within 2 weeks after submission</s>
+                        <br /><br />
                       </td>
                     </tr>
-
-
-
 
                     <tr>
-                      <td class="j_important_dates_table_borders j_important_dates_table_column_1"><b>&nbsp;&nbsp;Camera-ready Submission Deadline</b></td>
-                      <td class="j_important_dates_table_borders"><br>
-                      <s><b> 15<sup>th</sup> September, 2024 (AoE) (Sunday)</b></s>
-                        <br><br>
+                      <td
+                        class="j_important_dates_table_borders j_important_dates_table_column_1"
+                      >
+                        <b>&nbsp;&nbsp;Special Session Submission Deadline</b>
+                      </td>
+                      <td class="j_important_dates_table_borders">
+                        <br />
+                        <s>
+                          15<sup>th</sup> June, 2024 (AoE) (Saturday)
+                          <b>20<sup>th</sup> July, 2024 (AoE) (Saturday)</b></s
+                        >
+                        <br /><br />
                       </td>
                     </tr>
 
+                    <tr>
+                      <td
+                        class="j_important_dates_table_borders j_important_dates_table_column_1"
+                      >
+                        <b>&nbsp;&nbsp;Special Session Notification Date</b>
+                      </td>
+                      <td class="j_important_dates_table_borders">
+                        <br />
+                        <s
+                          ><b>
+                            3<sup>rd</sup> September, 2024 (AoE) (Tuesday)</b
+                          ></s
+                        >
+                        <br /><br />
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td
+                        class="j_important_dates_table_borders j_important_dates_table_column_1"
+                      >
+                        <b>&nbsp;&nbsp;Camera-ready Submission Deadline</b>
+                      </td>
+                      <td class="j_important_dates_table_borders">
+                        <br />
+                        <s
+                          ><b>
+                            15<sup>th</sup> September, 2024 (AoE) (Sunday)</b
+                          ></s
+                        >
+                        <br /><br />
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
 
@@ -438,20 +987,50 @@
                 <!-- <h2 class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Submission Guidelines</h2> -->
 
                 <!-- <h4 class='font-extrabold' style='padding-bottom: 10px; font-size: 18px;'>Submission of Proposals</h4> -->
-                <h2 class = "pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Proposal Submission Guideline</h2>
+                <h2
+                  class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold"
+                >
+                  Proposal Submission Guideline
+                </h2>
 
-                <ul style="list-style: decimal; padding-left: 18px;">
-                  <li><p class="mb-4 justified-text">Title: title (and possibly acronym) of the special session</p></li>
-                  <li><p class="mb-4 justified-text">Abstract: no more than 100 words, to allow conference attendees to understand the topic and the focus of the special session.</p></li>
-                  <li><p class="mb-4 justified-text">Aims and Scope: Description of its aims and the scope of suggested topics, for the interest to the general DM community and the ADMA2024 attendees.</p></li>
-                  <li><p class="mb-4 justified-text">Rationale: Explanation and justification on the novelty and timeliness of the special session, and its relevance to the ADMA community.</p></li>
+                <ul style="list-style: decimal; padding-left: 18px">
+                  <li>
+                    <p class="mb-4 justified-text">
+                      Title: title (and possibly acronym) of the special session
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-4 justified-text">
+                      Abstract: no more than 100 words, to allow conference
+                      attendees to understand the topic and the focus of the
+                      special session.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-4 justified-text">
+                      Aims and Scope: Description of its aims and the scope of
+                      suggested topics, for the interest to the general DM
+                      community and the ADMA2024 attendees.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-4 justified-text">
+                      Rationale: Explanation and justification on the novelty
+                      and timeliness of the special session, and its relevance
+                      to the ADMA community.
+                    </p>
+                  </li>
 
-                    <li>
-                      <p class="mb-4 justified-text">Organisation Team: Provide a list of organisers, with nominating at least one of them being the primary contact person(s). Specific information required for each organiser:</p>
-                    </li>
-                 
-                  <ul style="list-style: circle; padding-left: 50px;" start="1">
-    
+                  <li>
+                    <p class="mb-4 justified-text">
+                      Organisation Team: Provide a list of organisers, with
+                      nominating at least one of them being the primary contact
+                      person(s). Specific information required for each
+                      organiser:
+                    </p>
+                  </li>
+
+                  <ul style="list-style: circle; padding-left: 50px" start="1">
                     <li>
                       <p class="mb-4 justified-text">Names</p>
                     </li>
@@ -462,42 +1041,52 @@
                       <p class="mb-4 justified-text">Country</p>
                     </li>
                     <li>
-                      <p class="mb-4 justified-text">Short bio (including relevant event organisation experience)</p>
+                      <p class="mb-4 justified-text">
+                        Short bio (including relevant event organisation
+                        experience)
+                      </p>
                     </li>
                     <li>
-                      <p class="mb-4 justified-text">Primary contact person or not.</p>
+                      <p class="mb-4 justified-text">
+                        Primary contact person or not.
+                      </p>
                     </li>
                     <li>
-                      <p class="mb-4 justified-text">E-mail </p>
+                      <p class="mb-4 justified-text">E-mail</p>
                     </li>
                     <li>
                       <p class="mb-4 justified-text">Homepage (if any)</p>
                     </li>
-
                   </ul>
 
-                    
-                  <li><p class="mb-4 justified-text">A list of potential Technical Program Committee members</p></li>
+                  <li>
+                    <p class="mb-4 justified-text">
+                      A list of potential Technical Program Committee members
+                    </p>
+                  </li>
 
                   <li>
-                    <p class="mb-4 justified-text">Estimated number of submissions</p>
-
-                    </li>
+                    <p class="mb-4 justified-text">
+                      Estimated number of submissions
+                    </p>
+                  </li>
 
                   <li>
-                    <p class="mb-4 justified-text">The paper should NOT exceed 15 pages in LNAI format.</p>
+                    <p class="mb-4 justified-text">
+                      The paper should NOT exceed 15 pages in LNAI format.
+                    </p>
                   </li>
                   <li>
-                    <p class="mb-4 justified-text">Summary for the previous editions of this special session (if any), including particularly the number of papers received/accepted.</p>
+                    <p class="mb-4 justified-text">
+                      Summary for the previous editions of this special session
+                      (if any), including particularly the number of papers
+                      received/accepted.
+                    </p>
                   </li>
                 </ul>
-                
+
                 <!-- <p class="mb-4 justified-text">Submitted papers must comply with all of the rules below. Any violation may
                   result in an <b>automatic rejection</b>. -->
-
-               
-
-
 
                 <!-- <p class="mb-4 justified-text">
                   Proposals of workshops/tutorials should be PDF documents of up to three pages and written in English. <br> <br>
@@ -512,7 +1101,6 @@
                         Proposals should provide the following information:     
                 </p> -->
 
-                
                 <!-- <p class="mb-4 justified-text">
                     Submissions for Workshop or Tutorial proposals should be sent directly as pdf to 
                     <a href = '#' style = 'color:#6200be;'>TBA</a>. 
@@ -544,144 +1132,389 @@
                 <p class = "mb-4" style = "margin-top: 1em;">For an accepted workshop/tutorial, each speaker must register for the conference (author registration).
                 </p> -->
 
-
-
-
                 <!-- <h2 class = "pt-9 mb-5 font-titleFont text-xl text-mainPurple font-extrabold">Special Session Organisation Guidelines</h2> -->
                 <!-- <h4 class='font-extrabold' style='padding-bottom: 10px; font-size: 18px;'>Special Session Organisation Guidelines</h4> -->
-                <h2 class = "pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Special Session Organisation Guideline</h2>
-                
+                <h2
+                  class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold"
+                >
+                  Special Session Organisation Guideline
+                </h2>
 
-                Once a special session proposal is accepted, the organisers should follow the steps to set up and manage the special session. <br><br>
+                Once a special session proposal is accepted, the organisers
+                should follow the steps to set up and manage the special
+                session. <br /><br />
 
-                <ul style="list-style: decimal; padding-left: 18px;">
-                  <li><p class="mb-4 justified-text">A website with the “call for papers” information for the accepted special session should be created and widely publicised via various mailing list and on social media.</p></li>
-                  <li><p class="mb-4 justified-text">The important dates should comply with the following timeline:</p></li>
-                    Special Session Submission Deadline:	  <s> 15<sup>th</sup> June, 2024 (AoE) (Saturday)</s> 
-<b>20<sup>th</sup> July, 2024 (AoE) (Saturday)</b><br>
+                <ul style="list-style: decimal; padding-left: 18px">
+                  <li>
+                    <p class="mb-4 justified-text">
+                      A website with the “call for papers” information for the
+                      accepted special session should be created and widely
+                      publicised via various mailing list and on social media.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-4 justified-text">
+                      The important dates should comply with the following
+                      timeline:
+                    </p>
+                  </li>
+                  Special Session Submission Deadline:
+                  <s> 15<sup>th</sup> June, 2024 (AoE) (Saturday)</s>
+                  <b>20<sup>th</sup> July, 2024 (AoE) (Saturday)</b
+                  ><br />
 
+                  Special Session Notification Date:
+                  <b> 25<sup>th</sup> August, 2024 (AoE) (Sunday)</b
+                  ><br />
 
-                    Special Session Notification Date:	 <b> 25<sup>th</sup> August, 2024 (AoE) (Sunday)</b><br>
+                  Camera-Ready Submission Deadline:
+                  <b> 5<sup>th</sup> September, 2024 (AoE) (Thursday)</b
+                  ><br /><br />
 
-
-                    Camera-Ready Submission Deadline:	<b> 5<sup>th</sup> September, 2024 (AoE) (Thursday)</b><br><br>
-
-                  <li><p class="mb-4 justified-text">We changed the way of submitting the proposal: "ADMA Special Session Proposals" should be sent directly as pdf to Special Session Track Chairs via email to adma2024@mq.edu.au.</p></li>
-                  <li><p class="mb-4 justified-text">Special session organisers join the “Special Session Track” as a track chair and should be able to manage reviewers and submissions. All submissions of a special session can be easily selected by ticking the corresponding option of “SUBJECT AREAS”.</p></li>
-                  <li><p class="mb-4 justified-text">Special session papers strictly follow the same specifications, requirements, and policies as the main track submissions in terms of the paper length, formatting, and important policies. Please refer to <a href = "https://adma2024.github.io/call_for_papers.html" style = "color:#6200be;"> Submission Guideline</a> in the main track Call for Papers. </p></li>
-                  <li><p class="mb-4 justified-text">The peer-review of special session submissions is coordinated by the corresponding special session organizers and should be fully aligned to the main track reviewing process and criteria. Technical Program Committee members should be invited and managed by the special session organisers, but the peer-review should be double-blind. </p></li>
-                  <li><p class="mb-4 justified-text">The special session organisers make recommendation of accepting/rejecting a paper in their special session, which must be validated by the Special Session Track Chairs. The final decision of accepting/rejecting a special session paper is made by the ADMA2024 Program Chairs to ensure uniform quality control for all special sessions and consistency with the main track.</p></li>
-
+                  <li>
+                    <p class="mb-4 justified-text">
+                      We changed the way of submitting the proposal: "ADMA
+                      Special Session Proposals" should be sent directly as pdf
+                      to Special Session Track Chairs via email to
+                      adma2024@mq.edu.au.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-4 justified-text">
+                      Special session organisers join the “Special Session
+                      Track” as a track chair and should be able to manage
+                      reviewers and submissions. All submissions of a special
+                      session can be easily selected by ticking the
+                      corresponding option of “SUBJECT AREAS”.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-4 justified-text">
+                      Special session papers strictly follow the same
+                      specifications, requirements, and policies as the main
+                      track submissions in terms of the paper length,
+                      formatting, and important policies. Please refer to
+                      <a
+                        href="https://adma2024.github.io/call_for_papers.html"
+                        style="color: #6200be"
+                      >
+                        Submission Guideline</a
+                      >
+                      in the main track Call for Papers.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-4 justified-text">
+                      The peer-review of special session submissions is
+                      coordinated by the corresponding special session
+                      organizers and should be fully aligned to the main track
+                      reviewing process and criteria. Technical Program
+                      Committee members should be invited and managed by the
+                      special session organisers, but the peer-review should be
+                      double-blind.
+                    </p>
+                  </li>
+                  <li>
+                    <p class="mb-4 justified-text">
+                      The special session organisers make recommendation of
+                      accepting/rejecting a paper in their special session,
+                      which must be validated by the Special Session Track
+                      Chairs. The final decision of accepting/rejecting a
+                      special session paper is made by the ADMA2024 Program
+                      Chairs to ensure uniform quality control for all special
+                      sessions and consistency with the main track.
+                    </p>
+                  </li>
                 </ul>
 
-                <h2 class = "pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Enquiries</h2>
+                <h2
+                  class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold"
+                >
+                  Enquiries
+                </h2>
                 <!-- <h4 class='font-extrabold' style='padding-bottom: 10px; font-size: 18px;'>Enquiries</h4> -->
                 <p class="mb-4">
-                  All enquiries about special session proposals should be emailed to the Special Session Track Chairs via adma2024@mq.edu.au, with a subject starting with "[ADMA2024 Special Session]". 
-                  Specific inquiries about an accepted special session should go to the session organizers whose contact information should be available in the corresponding special session website. 
-
+                  All enquiries about special session proposals should be
+                  emailed to the Special Session Track Chairs via
+                  adma2024@mq.edu.au, with a subject starting with "[ADMA2024
+                  Special Session]". Specific inquiries about an accepted
+                  special session should go to the session organizers whose
+                  contact information should be available in the corresponding
+                  special session website.
                 </p>
 
                 <!-- <h2 class = "pt-9 mb-5 font-titleFont text-xl text-mainPurple font-extrabold">Special Session Track Chairs</h2> -->
-                <h2 class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold">Special Session Track Chairs</h2>
-               
-                  <ul style = "list-style: inside;">
-                    <li>
-                      <span class = "j_topics_table_font">Professor Maia Angelova, Aston University, UK </span>
-                    </li>
-                    <li>
-                      <span class = "j_topics_table_font">Dr. Hongsheng Hu, CSIRO Data61, Australia </span>
-                    </li>
-                  </ul>
+                <h2
+                  class="pt-9 mb-5 font-titleFont text-2xl text-mainPurple font-extrabold"
+                >
+                  Special Session Track Chairs
+                </h2>
+
+                <ul style="list-style: inside">
+                  <li>
+                    <span class="j_topics_table_font"
+                      >Professor Maia Angelova, Aston University, UK
+                    </span>
+                  </li>
+                  <li>
+                    <span class="j_topics_table_font"
+                      >Dr. Hongsheng Hu, CSIRO Data61, Australia
+                    </span>
+                  </li>
+                </ul>
               </header>
             </div>
           </main>
-          <footer class="bg-gray-100 mt-auto bottom-0 border-t shadow-inner overflow-x-hidden">
-            <div class="global-wrapper flex sm:block flex-col items-center md:items-start">
+          <footer
+            class="bg-gray-100 mt-auto bottom-0 border-t shadow-inner overflow-x-hidden"
+          >
+            <div
+              class="global-wrapper flex sm:block flex-col items-center md:items-start"
+            >
               <div class="flex flex-col py-2 px-6 lg:px-0">
                 <div class="flex flex-wrap gap-x-12 gap-y-4 mb-4 md:mb-8">
                   <div>
-                    <p class="mb-5 font-semibold font-headingStyle tracking-semiWide">Gold Sponsors</p>
+                    <p
+                      class="mb-5 font-semibold font-headingStyle tracking-semiWide"
+                    >
+                      Gold Sponsors
+                    </p>
                     <div class="flex flex-wrap gap-x-12">
-                      <a style="width:150px" class="mb-5 lg:mb-0 flex items-center" href="https://www.mq.edu.au/" target="_blank" rel="noreferrer" >
-                        <img style="height:55px;width:137.52px" src="./img/mqlogo.png" alt="MQ Logo"/>
+                      <a
+                        style="width: 150px"
+                        class="mb-5 lg:mb-0 flex items-center"
+                        href="https://www.mq.edu.au/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          style="height: 55px; width: 137.52px"
+                          src="./img/mqlogo.png"
+                          alt="MQ Logo"
+                        />
                       </a>
-                      <a style="width:170px" class="mb-5 lg:mb-0 flex items-center" href="https://www.adelaide.edu.au/" target="_blank" rel="noreferrer">
-                        <img style="height:40px; width:90.35px" src="./img/adelaide_logo.png" alt="The University Of Adelaide Logo">
+                      <a
+                        style="width: 170px"
+                        class="mb-5 lg:mb-0 flex items-center"
+                        href="https://www.adelaide.edu.au/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          style="height: 40px; width: 90.35px"
+                          src="./img/adelaide_logo.png"
+                          alt="The University Of Adelaide Logo"
+                        />
                       </a>
-                      <a style="width:170px" class="mb-5 lg:mb-0 flex items-center" href="https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence" target="_blank" rel="noreferrer">
-                        <img style="height:100px; width:90.35px" src="./img/aai_logo.png" alt="AAI Logo">
+                      <a
+                        style="width: 170px"
+                        class="mb-5 lg:mb-0 flex items-center"
+                        href="https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/centre-for-applied-artificial-intelligence"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          style="height: 100px; width: 90.35px"
+                          src="./img/aai_logo.png"
+                          alt="AAI Logo"
+                        />
                       </a>
-                      <a style="width:170px" class="mb-5 lg:mb-0 flex items-center" href="https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/data-horizons" target="_blank" rel="noreferrer">
-                        <img style="height:100px; width:155px" src="./img/datahorizen.png" alt="Data Horizon Logo">
+                      <a
+                        style="width: 170px"
+                        class="mb-5 lg:mb-0 flex items-center"
+                        href="https://www.mq.edu.au/research/research-centres-groups-and-facilities/centres/data-horizons"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          style="height: 100px; width: 155px"
+                          src="./img/datahorizen.png"
+                          alt="Data Horizon Logo"
+                        />
                       </a>
                     </div>
                   </div>
                   <div>
-                    <p class="mb-5 font-semibold font-headingStyle tracking-semiWide">Silver Sponsors</p> 
+                    <p
+                      class="mb-5 font-semibold font-headingStyle tracking-semiWide"
+                    >
+                      Silver Sponsors
+                    </p>
                     <div class="flex flex-wrap gap-x-12">
-                      <a style="width:170px" class="mb-5 lg:mb-0 flex items-center" href="https://www.science.org.au/" target="_blank" rel="noreferrer">
-                        <img style="height:50px;width:250px" src="./img/aas.png" alt="AAS Logo"/>
+                      <a
+                        style="width: 170px"
+                        class="mb-5 lg:mb-0 flex items-center"
+                        href="https://www.science.org.au/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          style="height: 50px; width: 250px"
+                          src="./img/aas.png"
+                          alt="AAS Logo"
+                        />
                       </a>
-                      <a style="width:170px" class="mb-5 lg:mb-0 flex items-center" href="https://lightwheel.ai/" target="_blank" rel="noreferrer">
-                        <img style="height:40px;width:90.35" src="./img/lightwheelai.jpg" alt="lightwheelai Logo"/>
+                      <a
+                        style="width: 170px"
+                        class="mb-5 lg:mb-0 flex items-center"
+                        href="https://lightwheel.ai/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          style="height: 40px; width: 90.35"
+                          src="./img/lightwheelai.jpg"
+                          alt="lightwheelai Logo"
+                        />
                       </a>
                     </div>
                   </div>
                   <div>
-                    <p class="mb-5 font-semibold font-headingStyle tracking-semiWide">Bronze Sponsors</p> 
+                    <p
+                      class="mb-5 font-semibold font-headingStyle tracking-semiWide"
+                    >
+                      Bronze Sponsors
+                    </p>
                     <div class="flex flex-wrap gap-x-12">
-                      <a style="width:170px" class="mb-5 lg:mb-0 flex items-center" href="https://www.springer.com/gp" target="_blank" rel="noreferrer">
-                        <img style="height:50px;width:170px" src="./img/springer-logo-transparent.png" alt="Springer Logo"/>
+                      <a
+                        style="width: 170px"
+                        class="mb-5 lg:mb-0 flex items-center"
+                        href="https://www.springer.com/gp"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          style="height: 50px; width: 170px"
+                          src="./img/springer-logo-transparent.png"
+                          alt="Springer Logo"
+                        />
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="flex flex-col-reverse md:flex-row px-6 lg:px-0 items-start justify-between w-full">
-                  <small class="">ADMA2024 - The 20<sup>th</sup> International Conference on Advanced Data Mining and Applications, Sydney, Australia</small>
-                <small class="mb-3 md:mb-0"><a class="hover:underline" href="https://www.springernature.com/gp/authors/book-authors-code-of-conduct#:~:text=Springer%20Nature%20Code%20of%20Conduct,of%20Conduct%20for%20Book%20Authors.&amp;text=Results%20should%20be%20presented%20clearly,including%20image%2Dbased%20manipulation" target="_blank" rel="noreferrer">Code of Conduct</a></small>
+              <div
+                class="flex flex-col-reverse md:flex-row px-6 lg:px-0 items-start justify-between w-full"
+              >
+                <small class=""
+                  >ADMA2024 - The 20<sup>th</sup> International Conference on
+                  Advanced Data Mining and Applications, Sydney,
+                  Australia</small
+                >
+                <small class="mb-3 md:mb-0"
+                  ><a
+                    class="hover:underline"
+                    href="https://www.springernature.com/gp/authors/book-authors-code-of-conduct#:~:text=Springer%20Nature%20Code%20of%20Conduct,of%20Conduct%20for%20Book%20Authors.&amp;text=Results%20should%20be%20presented%20clearly,including%20image%2Dbased%20manipulation"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Code of Conduct</a
+                  ></small
+                >
               </div>
               <div>
-                <small>Image credit: <a href="https://concreteplayground.com/sydney/arts-entertainment/ten-breathtaking-light-installations-you-need-to-catch-at-vivid-sydney-2022">Concrete Playground Pty Ltd</a> </small>
+                <small
+                  >Image credit:
+                  <a
+                    href="https://concreteplayground.com/sydney/arts-entertainment/ten-breathtaking-light-installations-you-need-to-catch-at-vivid-sydney-2022"
+                    >Concrete Playground Pty Ltd</a
+                  >
+                </small>
               </div>
             </div>
           </footer>
         </div>
       </div>
-      <div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true">
-      </div>
+      <div
+        id="gatsby-announcer"
+        style="
+          position: absolute;
+          top: 0;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        "
+        aria-live="assertive"
+        aria-atomic="true"
+      ></div>
     </div>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XSX58G49PD">
-    </script>
-    <script>      
-          if(true) {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer && window.dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-XSX58G49PD"
+    ></script>
+    <script>
+      if (true) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer && window.dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-            gtag('config', 'G-XSX58G49PD', {"send_page_view":false});
-          }
+        gtag("config", "G-XSX58G49PD", { send_page_view: false });
+      }
     </script>
-    <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";/*]]>*/</script>
+    <script id="gatsby-script-loader">
+      /*<![CDATA[*/ window.pagePath = "/"; /*]]>*/
+    </script>
     <script id="gatsby-chunk-mapping">
-    /*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-1c9788fca0f90abb50c3.js"],"app":["/app-a59b4b6740a68aeefd26.js"],"component---src-pages-404-js":["/component---src-pages-404-js-3d51b459a80f969a4f66.js"],"component---src-pages-gather-town-js":["/component---src-pages-gather-town-js-20a5b8eb4f529ec02e4a.js"],"component---src-pages-index-js":["/component---src-pages-index-js-8a4adfc3136c188f7d4d.js"],"component---src-pages-organisation-js":["/component---src-pages-organisation-js-d897b29f4c76da418e8b.js"],"component---src-pages-phd-school-js":["/component---src-pages-phd-school-js-342a122469920c419385.js"],"component---src-pages-program-at-a-glance-js":["/component---src-pages-program-at-a-glance-js-f09b822ffe2455eef479.js"],"component---src-pages-program-js":["/component---src-pages-program-js-3fe28d1a2f210ef0ff80.js"],"component---src-pages-sponsors-js":["/component---src-pages-sponsors-js-e9c839fba1b21aac6ebf.js"],"component---src-templates-article-js":["/component---src-templates-article-js-7fa23b91346b8acf9bb1.js"]};/*]]>*/
+      /*<![CDATA[*/ window.___chunkMapping = {
+        polyfill: ["/polyfill-1c9788fca0f90abb50c3.js"],
+        app: ["/app-a59b4b6740a68aeefd26.js"],
+        "component---src-pages-404-js": [
+          "/component---src-pages-404-js-3d51b459a80f969a4f66.js",
+        ],
+        "component---src-pages-gather-town-js": [
+          "/component---src-pages-gather-town-js-20a5b8eb4f529ec02e4a.js",
+        ],
+        "component---src-pages-index-js": [
+          "/component---src-pages-index-js-8a4adfc3136c188f7d4d.js",
+        ],
+        "component---src-pages-organisation-js": [
+          "/component---src-pages-organisation-js-d897b29f4c76da418e8b.js",
+        ],
+        "component---src-pages-phd-school-js": [
+          "/component---src-pages-phd-school-js-342a122469920c419385.js",
+        ],
+        "component---src-pages-program-at-a-glance-js": [
+          "/component---src-pages-program-at-a-glance-js-f09b822ffe2455eef479.js",
+        ],
+        "component---src-pages-program-js": [
+          "/component---src-pages-program-js-3fe28d1a2f210ef0ff80.js",
+        ],
+        "component---src-pages-sponsors-js": [
+          "/component---src-pages-sponsors-js-e9c839fba1b21aac6ebf.js",
+        ],
+        "component---src-templates-article-js": [
+          "/component---src-templates-article-js-7fa23b91346b8acf9bb1.js",
+        ],
+      }; /*]]>*/
     </script>
     <script>
-      function show_mobile_nav()
-      {
-        var current_class = document.getElementById('mobile_menu').className;
-        if (current_class == 'hidden')
-        {
-          document.getElementById('mobile_menu').setAttribute('class', 'md:hidden');
-          document.getElementById('menu_icon_1').setAttribute('class', 'hidden h-6 w-6');
-          document.getElementById('menu_icon_2').setAttribute('class', 'block h-6 w-6');
-        }
-        else
-        {
-          document.getElementById('mobile_menu').setAttribute('class', 'hidden');
-          document.getElementById('menu_icon_1').setAttribute('class', 'block h-6 w-6');
-          document.getElementById('menu_icon_2').setAttribute('class', 'hidden h-6 w-6');
+      function show_mobile_nav() {
+        var current_class = document.getElementById("mobile_menu").className;
+        if (current_class == "hidden") {
+          document
+            .getElementById("mobile_menu")
+            .setAttribute("class", "md:hidden");
+          document
+            .getElementById("menu_icon_1")
+            .setAttribute("class", "hidden h-6 w-6");
+          document
+            .getElementById("menu_icon_2")
+            .setAttribute("class", "block h-6 w-6");
+        } else {
+          document
+            .getElementById("mobile_menu")
+            .setAttribute("class", "hidden");
+          document
+            .getElementById("menu_icon_1")
+            .setAttribute("class", "block h-6 w-6");
+          document
+            .getElementById("menu_icon_2")
+            .setAttribute("class", "hidden h-6 w-6");
         }
       }
     </script>
