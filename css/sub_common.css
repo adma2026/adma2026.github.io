@@ -636,3 +636,220 @@ display: none;
 display: block;
 }
 
+/* Attending pages */
+.attending-page article {
+	padding-top: 2.25rem;
+}
+
+.attending-page section + section {
+	margin-top: 2.75rem;
+}
+
+.attending-page h1,
+.attending-page h2,
+.attending-page h3 {
+	font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.attending-page h1 {
+	color: rgba(118, 35, 47, 1);
+	font-size: 1.875rem;
+	margin: 0 0 1.25rem;
+}
+
+.attending-page h2 {
+	color: #333;
+	font-size: 1.2rem;
+	margin: 1.5rem 0 .75rem;
+}
+
+.attending-page h3 {
+	color: #333;
+	font-size: 1.1rem;
+	margin: 1.5rem 0 .75rem;
+}
+
+.attending-page p {
+	margin-bottom: 1.15rem;
+	text-align: justify;
+}
+
+.attending-page ul {
+	list-style: disc outside;
+	margin: 0 0 1.4rem 1.35rem;
+}
+
+.attending-page li {
+	line-height: 1.625;
+	margin-bottom: .45rem;
+}
+
+.attending-page a {
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+.attending-highlight {
+	-webkit-box-decoration-break: clone;
+	background-color: #ffff00;
+	box-decoration-break: clone;
+	color: #000;
+	font-weight: 700;
+	padding: 0;
+}
+
+.attending-image-grid {
+	display: grid;
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+
+.attending-image-grid img,
+.attending-single-image img,
+.attending-attraction img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.attending-venue-images {
+	align-items: center;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.attending-banquet-images {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.attending-single-image {
+	margin: 1.5rem auto;
+	max-width: 42rem;
+}
+
+.attending-table-wrap {
+	margin: 1.25rem 0 2rem;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.attending-table {
+	background: rgba(255, 255, 255, .45);
+	border-collapse: collapse;
+	font-size: .94rem;
+	margin: 0;
+	min-width: 47rem;
+	width: 100%;
+}
+
+.attending-table th,
+.attending-table td {
+	border: 1px solid #c8c4bd;
+	padding: .75rem;
+	text-align: left;
+	vertical-align: top;
+}
+
+.attending-table th {
+	background: rgba(165, 46, 66, .1);
+	font-weight: 700;
+	text-align: center;
+}
+
+.attending-table th:nth-child(1),
+.attending-table td:nth-child(1) {
+	width: 14%;
+}
+
+.attending-table th:nth-child(2),
+.attending-table td:nth-child(2),
+.attending-table th:nth-child(3),
+.attending-table td:nth-child(3) {
+	width: 16%;
+}
+
+.attending-table p {
+	margin-bottom: .45rem;
+	text-align: left;
+}
+
+.attending-table p:last-child {
+	margin-bottom: 0;
+}
+
+.attending-booking-links {
+	text-align: left !important;
+}
+
+.attending-attractions {
+	display: grid;
+	gap: 2.25rem 2rem;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	margin: 2rem 0;
+}
+
+.attending-attractions .attending-attraction {
+	margin-top: 0;
+}
+
+.attending-attraction h2 {
+	margin-top: 0;
+}
+
+.attending-attraction h2 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.attending-attraction h2 a:hover,
+.attending-attraction h2 a:focus-visible {
+	text-decoration: underline;
+}
+
+.attending-attraction img {
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.attending-attraction p:last-child {
+	margin-bottom: 0;
+}
+
+.attending-attraction p,
+.attending-attractions + p {
+	text-align: left;
+}
+
+@media (max-width: 639px) {
+	.attending-page article {
+		padding-top: 1.75rem;
+	}
+
+	.attending-page h1 {
+		font-size: 1.65rem;
+	}
+
+	.attending-page h2 {
+		font-size: 1.1rem;
+	}
+
+	.attending-page p {
+		text-align: left;
+	}
+
+	.attending-venue-images,
+	.attending-banquet-images,
+	.attending-attractions {
+		grid-template-columns: 1fr;
+	}
+
+	.attending-table {
+		font-size: .875rem;
+	}
+
+	.attending-table th,
+	.attending-table td {
+		padding: .6rem;
+	}
+}
