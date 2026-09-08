@@ -691,15 +691,6 @@ display: block;
 	text-decoration: underline;
 }
 
-.attending-highlight {
-	-webkit-box-decoration-break: clone;
-	background-color: #ffff00;
-	box-decoration-break: clone;
-	color: #000;
-	font-weight: 700;
-	padding: 0;
-}
-
 .attending-image-grid {
 	display: grid;
 	gap: 1rem;
