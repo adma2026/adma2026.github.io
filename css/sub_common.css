@@ -773,6 +773,82 @@ display: block;
 	text-align: left !important;
 }
 
+.attending-accommodation-page p {
+	text-align: left;
+}
+
+.attending-accommodation-images {
+	align-items: center;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.attending-accommodation-images img {
+	width: 100%;
+}
+
+.attending-accommodation-hero-images {
+	grid-template-columns: minmax(0, .883fr) minmax(0, 1fr);
+}
+
+.attending-accommodation-discount {
+	color: #c65f10;
+	font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.2rem;
+	font-style: italic;
+	font-weight: 700;
+	margin: 2rem 0 1.25rem;
+	text-align: center !important;
+}
+
+.attending-accommodation-rates {
+	min-width: 52rem;
+}
+
+.attending-accommodation-rates th,
+.attending-accommodation-rates td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.attending-accommodation-rates th:nth-child(1),
+.attending-accommodation-rates td:nth-child(1) {
+	width: 18%;
+}
+
+.attending-accommodation-rates th:nth-child(2),
+.attending-accommodation-rates td:nth-child(2),
+.attending-accommodation-rates th:nth-child(3),
+.attending-accommodation-rates td:nth-child(3) {
+	width: 20%;
+}
+
+.attending-accommodation-rates th:nth-child(4),
+.attending-accommodation-rates td:nth-child(4) {
+	width: 24%;
+}
+
+.attending-accommodation-rates .attending-accommodation-rate-label {
+	background: rgba(255, 255, 255, .45);
+}
+
+.attending-accommodation-rates .attending-accommodation-more-options {
+	font-style: italic;
+	font-weight: 400;
+	width: 18%;
+}
+
+.attending-accommodation-rates .attending-accommodation-early-bird > * {
+	color: #c65f10;
+	font-weight: 700;
+}
+
+.attending-accommodation-booking-links {
+	font-size: 1.05rem;
+	font-weight: 700;
+	margin-bottom: 2.5rem;
+	text-align: center !important;
+}
+
 .attending-attractions {
 	display: grid;
 	gap: 2.25rem 2rem;
@@ -831,6 +907,7 @@ display: block;
 
 	.attending-venue-images,
 	.attending-banquet-images,
+	.attending-accommodation-images,
 	.attending-attractions {
 		grid-template-columns: 1fr;
 	}
