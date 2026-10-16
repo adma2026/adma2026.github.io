@@ -51,26 +51,54 @@
   width: 45%;
 }
 
-.adma-tutorial-table {
-  min-width: 720px;
+.adma-tutorial-list {
+  margin-top: 0.5rem;
 }
 
-.adma-tutorial-table th:first-child,
-.adma-tutorial-table td:first-child {
-  width: 20%;
+.adma-tutorial-detail {
+  padding: 1.75rem 0 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  scroll-margin-top: 5rem;
 }
 
-.adma-tutorial-table th:nth-child(2),
-.adma-tutorial-table td:nth-child(2) {
-  width: 42%;
+.adma-tutorial-detail:first-child {
+  padding-top: 0.75rem;
 }
 
-.adma-tutorial-abstract-row th,
-.adma-tutorial-abstract-row td {
-  border-bottom-width: 2px;
+.adma-tutorial-detail:last-child {
+  border-bottom: 0;
 }
 
-.adma-tutorial-abstract-row p:last-child {
+.adma-tutorial-title {
+  margin: 0 0 1rem;
+  color: #76232f;
+  font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.adma-tutorial-authors {
+  margin-bottom: 1.25rem;
+  color: #2e353f;
+}
+
+.adma-tutorial-author-line {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.adma-tutorial-time {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.adma-tutorial-abstract p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.adma-tutorial-abstract p:last-child {
   margin-bottom: 0;
 }
 
@@ -595,6 +623,10 @@ a.adma-overview-card:hover {
 }
 
 @media (max-width: 640px) {
+  .adma-tutorial-title {
+    font-size: 1.25rem;
+  }
+
   .adma-program-nav {
     position: static;
   }

@@ -559,14 +559,8 @@
     return String(value ?? "").split(/\n\s*\n/).map((paragraph) => `<p class="mb-4">${escapeHtml(paragraph)}</p>`).join("");
   }
 
-  function renderFormattedRuns(runs) {
-    return (runs || []).map((run) => {
-      let output = escapeHtml(run.text);
-      if (run.bold) output = `<strong>${output}</strong>`;
-      if (run.italic) output = `<em>${output}</em>`;
-      if (run.underline) output = `<u>${output}</u>`;
-      return output;
-    }).join("");
+  function tutorialAuthorLine(runs) {
+    return (runs || []).map((run) => run.text).join("");
   }
 
   function formatTimeRange(value) {
@@ -601,27 +595,29 @@
     return mergeContiguousTimeRanges(times).map((time) => `Day ${tutorial.day}, ${formatTimeRange(time)}`);
   }
 
+  function renderTutorialAbstract(value) {
+    return String(value ?? "")
+      .split(/\n\s*\n/)
+      .map((paragraph, index) => `
+        <p>${index === 0 ? "<strong>Abstract.</strong> " : ""}${escapeHtml(paragraph)}</p>`)
+      .join("");
+  }
+
   function renderTutorials() {
     root.innerHTML = `
       ${pageHeading("ADMA2026 Tutorials")}
-      <div class="adma-table-wrap">
-        <table class="adma-plain-table adma-tutorial-table">
-          <thead>
-            <tr>
-              <th scope="col">Time</th>
-              <th scope="col">Title</th>
-              <th scope="col">Authors</th>
-            </tr>
-          </thead>
-          ${data.tutorials.map((tutorial) => `
-            <tbody id="tutorial-${tutorial.number}">
-              <tr>
-                <td>${tutorialScheduleLabels(tutorial).map((label) => `<div>${escapeHtml(label)}</div>`).join("")}</td>
-                <td>${renderFormattedRuns(tutorial.titleRuns)}</td>
-                <td>${tutorial.authorLines.map((line) => `<div>${renderFormattedRuns(line)}</div>`).join("")}</td>
-              </tr>
-            </tbody>`).join("")}
-        </table>
+      <div class="adma-tutorial-list">
+        ${data.tutorials.map((tutorial) => `
+          <section class="adma-tutorial-detail" id="tutorial-${tutorial.number}" aria-labelledby="tutorial-${tutorial.number}-title">
+            <h2 class="adma-tutorial-title" id="tutorial-${tutorial.number}-title">${escapeHtml(tutorial.title)}</h2>
+            <div class="adma-tutorial-authors" aria-label="Authors">
+              ${tutorial.authorLines.map((line) => `<p class="adma-tutorial-author-line">${escapeHtml(tutorialAuthorLine(line))}</p>`).join("")}
+            </div>
+            <p class="adma-tutorial-time"><strong>Time:</strong> ${tutorialScheduleLabels(tutorial).map(escapeHtml).join(" / ")}</p>
+            <div class="adma-tutorial-abstract">
+              ${renderTutorialAbstract(tutorial.abstract)}
+            </div>
+          </section>`).join("")}
       </div>`;
   }
 
