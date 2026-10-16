@@ -634,6 +634,13 @@ a.adma-overview-card:hover {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+#keynote-3 .adma-keynote-portrait img {
+  object-position: center 12%;
 }
 
 .adma-keynote-title {
