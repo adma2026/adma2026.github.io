@@ -545,6 +545,21 @@
     return String(value ?? "").split(/\n\s*\n/).map((paragraph) => `<p class="mb-4">${escapeHtml(paragraph)}</p>`).join("");
   }
 
+  function renderFormattedRuns(runs) {
+    return (runs || []).map((run) => {
+      let output = escapeHtml(run.text);
+      if (run.bold) output = `<strong>${output}</strong>`;
+      if (run.italic) output = `<em>${output}</em>`;
+      if (run.underline) output = `<u>${output}</u>`;
+      return output;
+    }).join("");
+  }
+
+  function tutorialScheduleLabel(tutorial) {
+    const time = String(tutorial.time || "").replace(/\s*-\s*/, " - ");
+    return `Day ${tutorial.day}, ${time}`;
+  }
+
   function renderTutorials() {
     root.innerHTML = `
       ${pageHeading("ADMA2026 Tutorials")}
@@ -560,13 +575,9 @@
           ${data.tutorials.map((tutorial) => `
             <tbody id="tutorial-${tutorial.number}">
               <tr>
-                <td><strong>${escapeHtml(tutorial.date)}</strong><br>${escapeHtml(tutorial.time)}</td>
-                <td><strong class="text-mainPurple">${escapeHtml(tutorial.title)}</strong></td>
-                <td>${tutorial.presenters.map((speaker) => escapeHtml(speaker.name)).join("; ")}</td>
-              </tr>
-              <tr class="adma-tutorial-abstract-row">
-                <th scope="row">Abstract</th>
-                <td colspan="2">${textParagraphs(tutorial.abstract)}</td>
+                <td>${escapeHtml(tutorialScheduleLabel(tutorial))}</td>
+                <td>${renderFormattedRuns(tutorial.titleRuns)}</td>
+                <td>${tutorial.authorLines.map((line) => `<div>${renderFormattedRuns(line)}</div>`).join("")}</td>
               </tr>
             </tbody>`).join("")}
         </table>

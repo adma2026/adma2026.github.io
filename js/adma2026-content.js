@@ -2523,20 +2523,66 @@ window.ADMA2026Content = {
   "tutorials": [
     {
       "number": 1,
-      "title": "Tutorial on Agentic Graph Learning: Foundations and Frontiers",
-      "abstract": "Graph learning has been widely adopted in real-world applications to effectively capture complex structural dependencies and semantic information from graph-structured data. However, traditional methods, such as graph neural network (GNN)-based methods, face two fundamental limitations: they typically apply one-size-fits-all message-passing mechanisms to all nodes despite substantial structural and semantic heterogeneity, and they often require graph-specific training, resulting in limited transferability and generalization across different graphs and tasks. In response, Agentic Graph Learning (AGL) has recently emerged as a promising new paradigm for graph learning. By leveraging the reasoning and planning capabilities of large language models, AGL formulates graph learning as a sequential decision-making process, where agents autonomously plan their interactions with graph environments and progressively acquire task-relevant structural and semantic evidence through graph-native tools. In this tutorial, we aim to provide a comprehensive introduction to AGL, spanning its foundations and recent frontiers. We will cover: (1) the fundamental concepts, motivations, and key building blocks of agentic graph learning; (2) a systematic taxonomy of existing AGL methods, including single-agent graph reasoning, multi-agent collaboration, and their associated training strategies and applications; and (3) the key limitations, open challenges, and future research directions of AGL. Through this tutorial, we aim to provide a clear foundation for AGL and inspire future research and applications.",
+      "period": "AM",
+      "periodRuns": [
+        {
+          "text": "AM:",
+          "bold": false,
+          "italic": false,
+          "underline": true
+        }
+      ],
+      "title": "Agentic Graph Learning: Foundations and Frontiers",
+      "titleRuns": [
+        {
+          "text": "1. Agentic Graph Learning: Foundations and Frontiers ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "(1.5 hours)",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ],
+      "duration": "1.5 hours",
+      "authorLines": [
+        [
+          {
+            "text": "Liang Qu (Griffith University, Australia)",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        [
+          {
+            "text": "Jianxin Li",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          },
+          {
+            "text": " (Edith Cowan University, Australia)",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          }
+        ]
+      ],
       "presenters": [
         {
           "name": "Liang Qu",
-          "affiliation": "Griffith University",
-          "biography": "Dr. Liang Qu is a Lecturer in the School of Information and Communication Technology at Griffith University. He received his PhD from the School of Electrical Engineering and Computer Science at The University of Queensland in 2024 and subsequently worked as a Postdoctoral Research Fellow at Edith Cowan University in 2025. His research focuses on graph learning, agentic AI, and recommender systems. He has published more than 40 research papers in leading journals and conferences in artificial intelligence, data mining, and information retrieval, including IEEE TKDE, ACM TOIS, WWW, KDD, and SIGIR. His recent research explores agent-based learning and collaboration over graph-structured data, which is closely aligned with the central topic of this tutorial. He currently serves as an Associate Editor of Array and regularly reviews papers for major international journals and conferences."
+          "affiliation": "Griffith University, Australia"
         },
         {
           "name": "Jianxin Li",
-          "affiliation": "Edith Cowan University",
-          "biography": "Prof. Jianxin Li is a Professor with extensive research experience in information systems, data science, artificial intelligence, and graph-related learning problems. He has published around 200 peer-reviewed research papers in leading international conferences and journals, including SIGMOD, PVLDB, ICDE, WWW, KDD, IEEE TKDE, Knowledge-Based Systems, and Information Systems. A number of his publications have been recognized as Highly Cited Papers or Hot Papers. He has secured more than ten externally funded research projects with a total value of approximately AUD 1.7 million, including Australian Research Council Discovery and Linkage Projects. He has more than 16 years of teaching experience across several Australian universities, covering undergraduate and postgraduate courses in data science, artificial intelligence, and business intelligence. He currently serves as Associate Editor for several international journals, including Information Systems, Knowledge-Based Systems, IEEE Signal Processing Letters, and World Wide Web. He has also served in major conference leadership roles, including Program Committee Chair or Steering Committee Member for ADMA 2019, APWeb-WAIM 2023, and numerous international workshops."
+          "affiliation": "Edith Cowan University, Australia"
         }
       ],
+      "source": "resources/1014/6/ADMA'26 Tutorials.docx",
       "day": 1,
       "date": "Nov 13, Friday",
       "time": "11:00-12:30",
@@ -2544,75 +2590,136 @@ window.ADMA2026Content = {
     },
     {
       "number": 2,
+      "period": "PM",
+      "periodRuns": [
+        {
+          "text": "PM:",
+          "bold": false,
+          "italic": false,
+          "underline": true
+        }
+      ],
       "title": "Joint Modeling in Deep Recommender Systems",
-      "abstract": "In the current digital era, Deep Recommender Systems (DRS) are essential for navigating and tailoring online content to individual preferences. However, conventional approaches that rely primarily on a single recommendation task, scenario, data modality, or user behavior are increasingly inadequate for capturing users’ complex and evolving preferences. This limitation highlights the need for joint modeling approaches that integrate multiple tasks, scenarios, modalities, and behaviors within the recommendation process, enhancing recommendation precision, efficiency, and personalization. In this tutorial, we aim to give a comprehensive survey on the recent progress of the joint modeling methods in recommendations, which includes multi-task, multi-scenario, multi-modal, and multi-behavior modeling, as well as how large language models and generative models reshape these dimensions. This work will provide academic researchers and industry professionals with a thorough understanding and clear insight into these areas, sparking new ideas, fostering discussions, and driving technological advancements in the field of deep recommender systems.",
+      "titleRuns": [
+        {
+          "text": "2. Joint Modeling in Deep Recommender Systems (",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "3 hours",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": ")",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        }
+      ],
+      "duration": "3 hours",
+      "authorLines": [
+        [
+          {
+            "text": "Jingtong Gao, Zichuan Fu, Xiaopeng Li, Sheng Zhang, Xiaowei Qian, Yuxuan Hu",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          },
+          {
+            "text": " (City University of Hong Kong)",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        [
+          {
+            "text": "Ziru Liu, Yichao Wang, Bo Chen, Huifeng Guo, Ruiming Tang, Yong Liu (Huawei Technologies)",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        [
+          {
+            "text": "Qing Li (The Hong Kong Polytechnic University)",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          }
+        ],
+        [
+          {
+            "text": "Xiangyu Zhao (City University of Hong Kong)",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          }
+        ]
+      ],
       "presenters": [
         {
           "name": "Jingtong Gao",
-          "affiliation": "City University of Hong Kong",
-          "biography": "Mr. Jingtong Gao is a final-year Ph.D. candidate at City University of Hong Kong (CityU), with research interests in recommender systems, advertising, LLM, and generative modeling. He has published over 20 papers at leading conferences and journals and has presented tutorials at WWW23, IJCAI23, KDD23 and WWW25."
+          "affiliation": "City University of Hong Kong"
         },
         {
           "name": "Zichuan Fu",
-          "affiliation": "City University of Hong Kong",
-          "biography": "Mr. Zichuan Fu is a PhD student at the City University of Hong Kong (CityU). His research interests include large language models, model merging, LLM agents, and recommender systems. He has published papers at ACL, NeurIPS, and related venues."
+          "affiliation": "City University of Hong Kong"
         },
         {
           "name": "Xiaopeng Li",
-          "affiliation": "City University of Hong Kong",
-          "biography": "Mr. Xiaopeng Li is a final-year Ph.D. candidate at City University of Hong Kong (CityUHK), with research interests in recommender systems, information retrieval, and personalized large language models. He has published over 20 papers at leading conferences and journals and has presented tutorials at WWW 2025, SIGIR 2026, and KDD 2026."
+          "affiliation": "City University of Hong Kong"
         },
         {
           "name": "Sheng Zhang",
-          "affiliation": "City University of Hong Kong",
-          "biography": "Mr. Sheng Zhang is a PhD student at the City University of Hong Kong (CityU). His research interests include recommender systems and LLM agent. He has published papers at KDD, ACL, SIGIR, and related venues."
+          "affiliation": "City University of Hong Kong"
         },
         {
           "name": "Xiaowei Qian",
-          "affiliation": "City University of Hong Kong",
-          "biography": "Mr. Xiaowei Qian is a PhD student at the City University of Hong Kong (CityU). His research interests include large language models, post-training and agent system. He has published papers at ICML, AAAI, and KDD."
+          "affiliation": "City University of Hong Kong"
         },
         {
           "name": "Yuxuan Hu",
-          "affiliation": "City University of Hong Kong",
-          "biography": "Mr. Yuxuan Hu is a PhD student at the City University of Hong Kong (CityU). His research interests include multimodal learning, affective computing, and recommender systems. He has published papers at AAAI and ICASSP."
-        },
-        {
-          "name": "Qing Li",
-          "affiliation": "The Hong Kong Polytechnic University",
-          "biography": "Prof. Qing Li is Chair Professor of Data Science and Head of the Department of Computing at The Hong Kong Polytechnic University. His research interests include multimedia and data science, with applications in recommender systems. He has served as an organizer of numerous international conferences."
+          "affiliation": "City University of Hong Kong"
         },
         {
           "name": "Ziru Liu",
-          "affiliation": "Huawei Technologies",
-          "biography": "Mr. Ziru Liu is a researcher at Huawei Hong Kong Research Center. His research interests include AI Agent, Reinforcement Learning and Diffusion language models. He has published several papers at ICML, KDD, SIGIR, and WWW."
+          "affiliation": "Huawei Technologies"
         },
         {
           "name": "Yichao Wang",
-          "affiliation": "Huawei Technologies",
-          "biography": "Mr. Yichao Wang is a principal researcher at Huawei Noah’s Ark Lab. He earned his MS in Software Engineering from Peking University (PKU) in 2018. His research focuses on Deep Learning, Retrieval-Augmented Generation, Personalized Agents, and LLMs for Recommendation. He has published in top conferences and journals (KDD, AAAI, SIGIR, NeurIPS, WWW, CIKM, WSDM, COLING, TOIS, etc.) and served as a tutor at IJCAI’23."
+          "affiliation": "Huawei Technologies"
         },
         {
           "name": "Bo Chen",
-          "affiliation": "Huawei Technologies",
-          "biography": "Mr. Bo Chen has been a researcher in Huawei Noah’s Ark Lab since 2020. His research interests include recommender systems and AutoML. He has published several papers in his areas of interest (e.g., KDD, IJCAI, AAAI, SIGIR, ICDE, TKDE) and held one tutorial on deep recommender systems for IJCAI23."
+          "affiliation": "Huawei Technologies"
         },
         {
           "name": "Huifeng Guo",
-          "affiliation": "Huawei Technologies",
-          "biography": "Dr. Huifeng Guo has been a senior researcher in Huawei Noah’s Ark Lab since 2018. Before that, he got his Ph.D. degree from Harbin Institute of Technology in 2018 and his BEng from Lanzhou University in 2012. His research interests include deep learning, AutoML, graph learning, distributed training systems, and their applications in recommender systems. He has published more than 50 papers in top-tier journals and conferences. He serves as the organizer of multi-task and multi-scenario recommendation tutorial for IJCAI23."
+          "affiliation": "Huawei Technologies"
         },
         {
           "name": "Ruiming Tang",
-          "affiliation": "Huawei Technologies",
-          "biography": "Dr. Ruiming Tang has been a principal researcher in Huawei Noah’s Ark Lab since 2014. Before that, he got his PhD from the National University of Singapore in 2014 and his BEng from Northeastern University in China in 2009. His research interests include deep learning, reinforcement learning, AutoML, graph learning, and their applications in recommendation and search. He has published more than 200 papers. He also serves as the organizer of DLP@KDD’21, AML4RS@WWW’22, and joint modeling in DRS tutorial on IJCAI’23."
+          "affiliation": "Huawei Technologies"
         },
         {
           "name": "Yong Liu",
-          "affiliation": "Huawei Technologies",
-          "biography": "Dr. Yong Liu is an expert researcher at Huawei Noah’s Ark Lab, Singapore. Previously, he was a Senior Research Scientist at Nanyang Technological University (NTU), a Data Scientist at NTUC Enterprise, and a Research Scientist at I2R, A*STAR. He has served as an Area Chair/(Senior) PC member for major conferences (ICLR, NeurIPS, KDD, WWW, SIGIR, ACL, IJCAI, AAAI, etc.) and as a reviewer for IEEE/ACM transactions."
+          "affiliation": "Huawei Technologies"
+        },
+        {
+          "name": "Qing Li",
+          "affiliation": "The Hong Kong Polytechnic University"
+        },
+        {
+          "name": "Xiangyu Zhao",
+          "affiliation": "City University of Hong Kong"
         }
       ],
+      "source": "resources/1014/6/ADMA'26 Tutorials.docx",
       "day": 1,
       "date": "Nov 13, Friday",
       "time": "14:00-15:30",
@@ -2620,30 +2727,56 @@ window.ADMA2026Content = {
     },
     {
       "number": 3,
+      "period": "AM",
+      "periodRuns": [
+        {
+          "text": "AM:",
+          "bold": false,
+          "italic": false,
+          "underline": true
+        }
+      ],
       "title": "Vector Search for the Future: From Memory-Resident, Static Heterogeneous Storage, to Cloud-Native Architectures",
-      "abstract": "Vector search (VS) has become a fundamental component in multimodal data management, enabling core functionalities such as image, video, and code retrieval. As vector data scales rapidly, VS faces growing challenges in balancing search, latency, scalability, and cost. The evolution of VS has been closely driven by changes in storage architecture. Early VS methods rely on all-in-memory designs for low latency, but scalability is constrained by memory capacity and cost. To address this, recent research has adopted heterogeneous architectures that offload space-intensive vectors and index structures to SSDs, while exploiting block locality and I/O-efficient strategies to maintain high search performance at billion scale. Looking ahead, the increasing demand for trillion-scale vector retrieval and cloud-native elasticity is driving a further shift toward memory–SSD–object storage architectures, which enable cost-efficient data tiering and seamless scalability.\n\nIn this tutorial, we review the evolution of VS techniques from a storage-architecture perspective. We first review memory-resident methods, covering classical IVF-, hash-, quantization-, and graph-based designs. We then present a systematic overview of heterogeneous storage VS techniques, including their index designs, block-level layouts, query strategies, and update mechanisms. Finally, we examine emerging cloud-native systems and highlight open research opportunities for future large-scale vector retrieval systems.",
+      "titleRuns": [
+        {
+          "text": "3. Vector Search for the Future: From Memory-Resident, Static Heterogeneous Storage, to Cloud-Native Architectures ",
+          "bold": false,
+          "italic": false,
+          "underline": false
+        },
+        {
+          "text": "(1.5 hours)",
+          "bold": true,
+          "italic": false,
+          "underline": false
+        }
+      ],
+      "duration": "1.5 hours",
+      "authorLines": [
+        [
+          {
+            "text": "Yitong Song, Huiling Li, Yushuai Ji (Hong Kong Baptist University)",
+            "bold": false,
+            "italic": false,
+            "underline": false
+          }
+        ]
+      ],
       "presenters": [
         {
           "name": "Yitong Song",
-          "affiliation": "Hong Kong Baptist University",
-          "biography": "Yitong Song is a postdoctoral research fellow in the Department of Computer Science, Hong Kong Baptist University. Her research focuses on vector databases, with multiple publications at SIGMOD and VLDB. She will present heterogeneous-storage VS techniques."
+          "affiliation": "Hong Kong Baptist University"
         },
         {
-          "name": "Xuanhe Zhou",
-          "affiliation": "Shanghai Jiao Tong University",
-          "biography": "Xuanhe Zhou is an assistant professor in the Department of Computer Science, Shanghai Jiao Tong University. His research interests lie in data systems. He has received the SIGMOD 2025 Jim Gray Dissertation Honorable Mention and VLDB 2023 Best Industry Paper Runner-up. He has given tutorials at SIGMOD, VLDB, ICDE. He will present memory-resident VS techniques."
+          "name": "Huiling Li",
+          "affiliation": "Hong Kong Baptist University"
         },
         {
-          "name": "Christian S. Jensen",
-          "affiliation": "Aalborg University, Denmark",
-          "biography": "Christian S. Jensen is a Professor of Computer Science at Aalborg University, Denmark. His research centers on temporal, spatial, and multimodal data management and analytics. An ACM Fellow and IEEE Fellow with an h-index of 105, he has published over 500 papers and received the 2022 ACM SIGMOD Contributions Award and 2019 IEEE TCDE Impact Award. Former Editor-in-Chief of ACM TODS and The VLDB Journal, he has delivered numerous influential tutorials at SIGMOD and VLDB. He will present the background and research opportunities."
-        },
-        {
-          "name": "Jianliang Xu",
-          "affiliation": "Hong Kong Baptist University",
-          "biography": "Jianliang Xu is a Chair Professor and Head of the Department of Computer Science, Hong Kong Baptist University. His research spans databases, blockchain, and privacy-aware data management. An IEEE Fellow with an h-index of 65, he has published over 300 papers and given tutorials at SIGMOD and ICDE. He will present elastic multi-tiered VS techniques and open problems."
+          "name": "Yushuai Ji",
+          "affiliation": "Hong Kong Baptist University"
         }
       ],
+      "source": "resources/1014/6/ADMA'26 Tutorials.docx",
       "day": 2,
       "date": "Nov 14, Saturday",
       "time": "11:30-13:00",
@@ -2707,7 +2840,6 @@ window.ADMA2026Content = {
   ],
   "knownIssues": [
     "15 Full Papers do not appear in the supplied Paper or Special Sessions documents.",
-    "32 accepted papers do not appear in the supplied Poster Sessions document.",
-    "Tutorial 3's proposal describes a 3-hour tutorial, while the public program schedules 1.5 hours."
+    "32 accepted papers do not appear in the supplied Poster Sessions document."
   ]
 };
