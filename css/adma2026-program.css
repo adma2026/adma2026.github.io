@@ -74,51 +74,460 @@
   margin-bottom: 0;
 }
 
-.adma-schedule-table {
-  min-width: 900px;
-  table-layout: fixed;
+[data-adma-page="program-details"] {
+  --adma-brand-red: #76232f;
+  --adma-brand-purple: #51247a;
+  --adma-brand-red-pale: #fbf3f4;
+  --adma-brand-purple-pale: #f5f2f8;
+  --adma-brand-line: #d9d4dc;
+  --adma-brand-muted: #4b5563;
 }
 
-.adma-schedule-table th,
-.adma-schedule-table td {
-  text-align: center;
-  vertical-align: middle;
+[data-adma-page="program-details"] #program-overview,
+[data-adma-page="program-details"] #session-details {
+  scroll-margin-top: 9rem;
 }
 
-.adma-schedule-table th:first-child {
-  width: 130px;
+.adma-program-nav {
+  position: sticky;
+  top: 4rem;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  margin: 0 0 1.5rem;
+  padding: 0.75rem;
+  border: 1px solid var(--adma-brand-line);
+  background: rgba(255, 255, 255, 0.97);
 }
 
-.adma-program-day {
-  margin-bottom: 3rem;
+.adma-program-jump-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.adma-time-slot {
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #d1d5db;
+.adma-program-jump-links a {
+  padding: 0.45rem 0.7rem;
+  color: var(--adma-brand-purple);
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.adma-session-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  align-items: start;
+.adma-program-jump-links a:hover,
+.adma-program-jump-links a:focus-visible {
+  text-decoration: underline;
 }
 
-.adma-session-featured {
-  margin-bottom: 1rem;
+.adma-program-search {
+  display: flex;
+  flex: 1 1 34rem;
+  gap: 0.5rem;
+  align-items: center;
 }
 
-.adma-session-card {
-  min-width: 0;
-  padding: 1rem;
-  border: 1px solid #818181;
+.adma-program-search input {
+  min-width: 13rem;
+  flex: 1 1 20rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #9ca3af;
   border-radius: 4px;
+  font: inherit;
+}
+
+.adma-program-search button {
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--adma-brand-purple);
+  border-radius: 4px;
+  background: var(--adma-brand-purple);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.adma-program-search .adma-program-button-secondary {
+  background: #fff;
+  color: var(--adma-brand-purple);
+}
+
+.adma-program-search-status {
+  min-width: 8rem;
+  color: var(--adma-brand-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.adma-program-search input:focus-visible,
+.adma-program-search button:focus-visible,
+.adma-program-filter:focus-visible,
+.adma-overview-card:focus-visible {
+  outline: 3px solid rgba(118, 35, 47, 0.35);
+  outline-offset: 2px;
+}
+
+.adma-program-lead,
+.adma-program-venue {
+  margin-bottom: 0.75rem;
+}
+
+.adma-program-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--adma-brand-muted);
+  font-size: 0.875rem;
+}
+
+.adma-program-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.adma-program-legend i {
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 1px solid var(--adma-brand-line);
+  border-radius: 2px;
+  background: #f4f4f5;
+}
+
+.adma-program-legend .adma-legend-paper i {
+  border-color: #cfc2da;
+  background: var(--adma-brand-purple-pale);
+  box-shadow: inset 0 3px 0 var(--adma-brand-purple);
+}
+
+.adma-program-legend .adma-legend-poster i {
+  border-color: #e5cbd0;
+  background: var(--adma-brand-red-pale);
+  box-shadow: inset 0 3px 0 var(--adma-brand-red);
+}
+
+.adma-program-legend .adma-legend-special i {
+  border-color: #bca9c9;
+  background: #f8f3f6;
+  box-shadow: inset 0 3px 0 #6b334e;
+}
+
+.adma-program-legend .adma-legend-keynote i {
+  border-color: #d9b9bf;
+  background: #f8ecef;
+  box-shadow: inset 0 3px 0 #a52e42;
+}
+
+.adma-program-legend .adma-legend-tutorial i {
+  border-color: #d9cce4;
+  background: #f1ecf5;
+  box-shadow: inset 0 3px 0 #72439f;
+}
+
+.adma-program-day-tabs,
+.adma-program-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.adma-program-day-tabs {
+  margin-bottom: 0.75rem;
+}
+
+.adma-program-filter {
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--adma-brand-line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--adma-brand-purple);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.adma-program-filter:hover {
+  border-color: var(--adma-brand-purple);
+}
+
+.adma-program-filter.is-active {
+  border-color: var(--adma-brand-purple);
+  background: var(--adma-brand-purple);
+  color: #fff;
+}
+
+.adma-filter-count {
+  display: inline-block;
+  min-width: 1.25rem;
+  margin-left: 0.25rem;
+  padding: 0 0.3rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.adma-program-grid-wrap {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  overflow-x: auto;
+  padding: 0.75rem;
+  border: 1px solid var(--adma-brand-line);
+  background: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+
+.adma-program-grid {
+  display: grid;
+  min-width: 58rem;
+  grid-template-columns: 7.5rem repeat(var(--adma-room-count), minmax(11rem, 1fr));
+  gap: 0.4rem;
+  align-items: stretch;
+}
+
+.adma-program-grid-corner,
+.adma-program-room {
+  padding: 0.45rem;
+  border-bottom: 2px solid var(--adma-brand-line);
+  color: var(--adma-brand-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.adma-program-grid-corner,
+.adma-program-time {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: #fff;
+}
+
+.adma-program-time {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0.45rem 0.55rem 0 0;
+  color: var(--adma-brand-purple);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.adma-program-cell {
+  display: flex;
+  min-height: 6rem;
+}
+
+.adma-program-cell-empty {
+  border-radius: 4px;
+  background: repeating-linear-gradient(135deg, #fafafa, #fafafa 6px, #f3f4f6 6px, #f3f4f6 12px);
+}
+
+.adma-overview-card {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.6rem;
+  border: 1px solid var(--adma-brand-line);
+  border-radius: 4px;
+  background: #f7f7f7;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
   overflow-wrap: anywhere;
 }
 
-.adma-session-card-wide {
-  grid-column: 1 / -1;
+a.adma-overview-card:hover {
+  border-color: var(--adma-brand-purple);
+  text-decoration: none;
+}
+
+.adma-overview-band {
+  min-height: 2.5rem;
+  grid-column: 2 / -1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.adma-overview-name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.adma-overview-meta {
+  color: var(--adma-brand-muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.adma-overview-paper {
+  border-color: #cfc2da;
+  background: var(--adma-brand-purple-pale);
+  box-shadow: inset 0 3px 0 var(--adma-brand-purple);
+}
+
+.adma-overview-poster {
+  border-color: #e5cbd0;
+  background: var(--adma-brand-red-pale);
+  box-shadow: inset 0 3px 0 var(--adma-brand-red);
+}
+
+.adma-overview-special {
+  border-color: #bca9c9;
+  background: #f8f3f6;
+  box-shadow: inset 0 3px 0 #6b334e;
+}
+
+.adma-overview-keynote {
+  border-color: #d9b9bf;
+  background: #f8ecef;
+  box-shadow: inset 0 3px 0 #a52e42;
+}
+
+.adma-overview-tutorial {
+  border-color: #d9cce4;
+  background: #f1ecf5;
+  box-shadow: inset 0 3px 0 #72439f;
+}
+
+.adma-overview-event {
+  border-color: #d1d5db;
+  background: #f7f7f7;
+}
+
+.adma-overview-card.is-search-hit {
+  outline: 3px solid var(--adma-brand-red);
+  outline-offset: 1px;
+}
+
+.adma-overview-card.is-search-dimmed {
+  opacity: 0.28;
+}
+
+.adma-program-filter-panel {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  padding: 1rem;
+  border: 1px solid var(--adma-brand-line);
+  background: #fafafa;
+}
+
+.adma-filter-label {
+  margin-bottom: 0.45rem;
+  color: var(--adma-brand-muted);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.adma-program-detail-day {
+  margin-bottom: 2.75rem;
+}
+
+.adma-program-detail-day > h3 {
+  margin: 0 0 1rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid #d1d5db;
+  color: var(--adma-brand-red);
+  font-family: Montserrat, system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.adma-program-detail-slot {
+  margin-bottom: 1.75rem;
+}
+
+.adma-program-slot-heading {
+  margin: 0 0 0.65rem;
+  color: var(--adma-brand-purple);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.adma-program-detail-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.adma-session-detail {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--adma-brand-line);
+  border-top: 4px solid var(--adma-brand-purple);
+  border-radius: 4px;
+  background: #fff;
+  overflow-wrap: anywhere;
+}
+
+.adma-session-detail-poster {
+  border-top-color: var(--adma-brand-red);
+}
+
+.adma-session-detail-special {
+  border-top-color: #6b334e;
+}
+
+.adma-session-detail-keynote {
+  border-top-color: #a52e42;
+}
+
+.adma-session-detail-tutorial {
+  border-top-color: #72439f;
+}
+
+.adma-session-detail-header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.adma-session-detail-header h4 {
+  margin: 0;
+  color: var(--adma-brand-red);
+  font-family: Montserrat, system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.adma-session-kind {
+  margin-bottom: 0.3rem;
+  color: var(--adma-brand-purple);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.adma-session-meta {
+  min-width: 12rem;
+  margin: 0;
+  color: var(--adma-brand-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.adma-program-empty {
+  padding: 1rem;
+  border: 1px solid var(--adma-brand-line);
+  background: #fafafa;
 }
 
 .adma-anchor-target {
@@ -137,6 +546,10 @@
 
 .adma-session-paper-list li:last-child {
   margin-bottom: 0;
+}
+
+.adma-special-session-list .adma-invited-talk {
+  color: var(--adma-brand-purple);
 }
 
 .adma-session-paper-authors,
@@ -174,8 +587,36 @@
 }
 
 @media (max-width: 640px) {
-  .adma-session-grid {
-    grid-template-columns: minmax(0, 1fr);
+  .adma-program-nav {
+    position: static;
+  }
+
+  .adma-program-search {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .adma-program-search input {
+    flex-basis: 100%;
+  }
+
+  .adma-program-search-status {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+  }
+
+  .adma-program-grid-wrap {
+    padding: 0.5rem;
+  }
+
+  .adma-session-detail-header {
+    flex-direction: column;
+  }
+
+  .adma-session-meta {
+    min-width: 0;
+    text-align: left;
   }
 
   .adma-presenter {

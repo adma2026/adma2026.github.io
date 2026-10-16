@@ -2,9 +2,9 @@
 window.ADMA2026Content = {
   "meta": {
     "conference": "ADMA 2026",
-    "generatedAt": "2026-10-15",
+    "generatedAt": "2026-10-16",
     "publicationStatus": "review-preview",
-    "sourceRoot": "resources/1014 (read-only)"
+    "sourceRoot": "resources/1014 and resources/1015/special-sessions (read-only)"
   },
   "papers": [
     {
@@ -1475,7 +1475,7 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "RDI Special Session 1",
-              "anchor": null
+              "anchor": "special-session-rdi-1"
             },
             {
               "room": "Taipo Room 1+2, 2F",
@@ -1529,7 +1529,7 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "RDI Special Session 2",
-              "anchor": null
+              "anchor": "special-session-rdi-2"
             },
             {
               "room": "Taipo Room 1+2, 2F",
@@ -1731,7 +1731,7 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "PSTDA Special Session 1",
-              "anchor": null
+              "anchor": "special-session-pstda-1"
             },
             {
               "room": "Taipo Room 1+2, 2F",
@@ -1790,7 +1790,7 @@ window.ADMA2026Content = {
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "PSTDA Special Session 2",
-              "anchor": null
+              "anchor": "special-session-pstda-2"
             },
             {
               "room": "Taipo Room 3+4, 2F",
@@ -1844,7 +1844,7 @@ window.ADMA2026Content = {
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "PSTDA Special Session 3",
-              "anchor": null
+              "anchor": "special-session-pstda-3"
             },
             {
               "room": "Taipo Room 3+4, 2F",
@@ -2381,6 +2381,145 @@ window.ADMA2026Content = {
       "room": "Poster Area"
     }
   ],
+  "specialSessions": [
+    {
+      "id": "rdi-1",
+      "series": "RDI",
+      "number": 1,
+      "label": "RDI Special Session 1",
+      "anchor": "special-session-rdi-1",
+      "items": [
+        {
+          "kind": "invited",
+          "label": "RDI Invited Talk"
+        }
+      ],
+      "day": 2,
+      "date": "Nov 14, Saturday",
+      "time": "14:30-16:00",
+      "room": "Riverside Ballroom, 1F"
+    },
+    {
+      "id": "rdi-2",
+      "series": "RDI",
+      "number": 2,
+      "label": "RDI Special Session 2",
+      "anchor": "special-session-rdi-2",
+      "items": [
+        {
+          "kind": "paper",
+          "paperId": 219
+        },
+        {
+          "kind": "paper",
+          "paperId": 223
+        },
+        {
+          "kind": "paper",
+          "paperId": 376
+        },
+        {
+          "kind": "paper",
+          "paperId": 486
+        },
+        {
+          "kind": "paper",
+          "paperId": 502
+        }
+      ],
+      "day": 2,
+      "date": "Nov 14, Saturday",
+      "time": "16:30-18:00",
+      "room": "Riverside Ballroom, 1F"
+    },
+    {
+      "id": "pstda-1",
+      "series": "PSTDA",
+      "number": 1,
+      "label": "PSTDA Special Session 1",
+      "anchor": "special-session-pstda-1",
+      "items": [
+        {
+          "kind": "invited",
+          "label": "PSTDA Invited Talk 1"
+        },
+        {
+          "kind": "paper",
+          "paperId": 8
+        },
+        {
+          "kind": "paper",
+          "paperId": 59
+        }
+      ],
+      "day": 3,
+      "date": "Nov 15, Sunday",
+      "time": "11:00-12:30",
+      "room": "Riverside Ballroom, 1F"
+    },
+    {
+      "id": "pstda-2",
+      "series": "PSTDA",
+      "number": 2,
+      "label": "PSTDA Special Session 2",
+      "anchor": "special-session-pstda-2",
+      "items": [
+        {
+          "kind": "invited",
+          "label": "PSTDA Invited Talk 2"
+        },
+        {
+          "kind": "paper",
+          "paperId": 60
+        },
+        {
+          "kind": "paper",
+          "paperId": 61
+        },
+        {
+          "kind": "paper",
+          "paperId": 86
+        },
+        {
+          "kind": "paper",
+          "paperId": 87
+        }
+      ],
+      "day": 3,
+      "date": "Nov 15, Sunday",
+      "time": "14:00-15:30",
+      "room": "Taipo Room 1+2, 2F"
+    },
+    {
+      "id": "pstda-3",
+      "series": "PSTDA",
+      "number": 3,
+      "label": "PSTDA Special Session 3",
+      "anchor": "special-session-pstda-3",
+      "items": [
+        {
+          "kind": "invited",
+          "label": "PSTDA Invited Talk 3"
+        },
+        {
+          "kind": "paper",
+          "paperId": 90
+        },
+        {
+          "kind": "paper",
+          "paperId": 275
+        },
+        {
+          "kind": "paper",
+          "paperId": 393
+        }
+      ],
+      "day": 3,
+      "date": "Nov 15, Sunday",
+      "time": "16:00-17:30",
+      "room": "Taipo Room 1+2, 2F"
+    }
+  ],
   "tutorials": [
     {
       "number": 1,
@@ -2567,7 +2706,7 @@ window.ADMA2026Content = {
     }
   ],
   "knownIssues": [
-    "29 Full Papers do not appear in the supplied Oral Sessions document.",
+    "15 Full Papers do not appear in the supplied Paper or Special Sessions documents.",
     "32 accepted papers do not appear in the supplied Poster Sessions document.",
     "Tutorial 3's proposal describes a 3-hour tutorial, while the public program schedules 1.5 hours.",
     "The Gao Cong photo in S10 still requires human confirmation."
