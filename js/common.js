@@ -301,6 +301,24 @@ function show_pop_up_window(id, mode = 0)
     pop_up.className = 'j_pop_up j_uq_color_bg';
 }
 
+function toggle_mobile_section(sectionId)
+{
+    var section = document.getElementById(sectionId);
+    if (!section)
+    {
+        return;
+    }
+
+    section.classList.toggle('hidden');
+
+    var button = document.querySelector('button[aria-controls="' + sectionId + '"]');
+    if (button)
+    {
+        var isExpanded = !section.classList.contains('hidden');
+        button.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+    }
+}
+
 function hide_pop_up_window(id)
 {
     pop_up = document.getElementById(id);

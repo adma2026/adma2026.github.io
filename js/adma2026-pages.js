@@ -177,23 +177,32 @@
     return String(value ?? "").split(/\n\s*\n/).map((paragraph) => `<p class="mb-4">${escapeHtml(paragraph)}</p>`).join("");
   }
 
-  function tutorialBiographies(tutorial) {
-    return tutorial.presenters.map((speaker) => `<p class="mb-4">${escapeHtml(speaker.biography)}</p>`).join("");
-  }
-
   function renderTutorials() {
     root.innerHTML = `
       ${pageHeading("ADMA2026 Tutorials")}
-      ${data.tutorials.map((tutorial) => `
-        <section class="pt-9" id="tutorial-${tutorial.number}">
-          <div class="mb-4">
-            ${tutorial.presenters.map((speaker) => `
-              <p class="mb-2"><strong>${escapeHtml(speaker.name)}</strong><br>${escapeHtml(speaker.affiliation)}</p>`).join("")}
-          </div>
-          ${contentBlock("Title", `<p>${escapeHtml(tutorial.title)}</p>`)}
-          ${contentBlock("Abstract", textParagraphs(tutorial.abstract))}
-          ${contentBlock("Biography", tutorialBiographies(tutorial))}
-        </section>`).join("")}`;
+      <div class="adma-table-wrap">
+        <table class="adma-plain-table adma-tutorial-table">
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Title</th>
+              <th scope="col">Authors</th>
+            </tr>
+          </thead>
+          ${data.tutorials.map((tutorial) => `
+            <tbody id="tutorial-${tutorial.number}">
+              <tr>
+                <td><strong>${escapeHtml(tutorial.date)}</strong><br>${escapeHtml(tutorial.time)}</td>
+                <td><strong class="text-mainPurple">${escapeHtml(tutorial.title)}</strong></td>
+                <td>${tutorial.presenters.map((speaker) => escapeHtml(speaker.name)).join("; ")}</td>
+              </tr>
+              <tr class="adma-tutorial-abstract-row">
+                <th scope="row">Abstract</th>
+                <td colspan="2">${textParagraphs(tutorial.abstract)}</td>
+              </tr>
+            </tbody>`).join("")}
+        </table>
+      </div>`;
   }
 
   function renderKeynotes() {

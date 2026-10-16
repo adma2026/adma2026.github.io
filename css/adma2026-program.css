@@ -51,6 +51,29 @@
   width: 45%;
 }
 
+.adma-tutorial-table {
+  min-width: 720px;
+}
+
+.adma-tutorial-table th:first-child,
+.adma-tutorial-table td:first-child {
+  width: 20%;
+}
+
+.adma-tutorial-table th:nth-child(2),
+.adma-tutorial-table td:nth-child(2) {
+  width: 42%;
+}
+
+.adma-tutorial-abstract-row th,
+.adma-tutorial-abstract-row td {
+  border-bottom-width: 2px;
+}
+
+.adma-tutorial-abstract-row p:last-child {
+  margin-bottom: 0;
+}
+
 .adma-schedule-table {
   min-width: 900px;
   table-layout: fixed;
