@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#51247a">
     <title>Program at a Glance | ADMA 2026</title>
     <link rel="stylesheet" type="text/css" href="./css/sub_common.css">
-    <link rel="stylesheet" type="text/css" href="./vendor/pdfjs/web/pdf_viewer.css">
     <link rel="stylesheet" type="text/css" href="./css/adma2026-program.css?v=20261016-12">
+    <link rel="stylesheet" type="text/css" href="./css/adma2026-glance.css?v=20261016-1">
     <script type="text/javascript" src="./js/common.js"></script>
   </head>
   <body>
@@ -25,22 +25,83 @@
                   <a class="adma-site-link" href="./documents/ADMA-2026-Program-Overview.pdf" target="_blank" rel="noreferrer">Open PDF in a new tab</a>
                   · <a class="adma-site-link" href="./documents/ADMA-2026-Program-Overview.pdf" download>Download PDF</a>
                 </p>
-                <section aria-label="Program at a Glance PDF viewer" data-pdf-viewer>
-                  <div class="adma-pdf-toolbar" role="group" aria-label="PDF controls">
-                    <button type="button" data-pdf-zoom-out aria-label="Zoom out" disabled>−</button>
-                    <output data-pdf-scale aria-label="Zoom level">—</output>
-                    <button type="button" data-pdf-zoom-in aria-label="Zoom in" disabled>+</button>
-                    <button type="button" data-pdf-fit disabled>Fit width</button>
-                    <span data-pdf-page-count></span>
+                <div class="adma-glance-scroll" tabindex="0" role="region" aria-label="ADMA 2026 Program Overview, scroll horizontally to see all rooms">
+                  <div class="adma-glance-sheet">
+                    <!-- Layout, wording, colors, and merged cells follow the supplied Program Overview PDF. -->
+                    <table class="adma-glance-table" aria-label="ADMA 2026 Program Overview">
+                      <colgroup>
+                        <col class="adma-glance-time">
+                        <col class="adma-glance-duration">
+                        <col span="4" class="adma-glance-room">
+                      </colgroup>
+                      <tbody>
+                        <tr><th colspan="6" class="adma-glance-title">ADMA 2026 Program Overview</th></tr>
+                      </tbody>
+                      <tbody aria-labelledby="glance-day-0">
+                        <tr class="adma-glance-day"><th colspan="6" id="glance-day-0" scope="rowgroup">Day 0, Nov 12, Thursday</th></tr>
+                        <tr><th scope="row">15:00-18:00</th><td colspan="5">Registration</td></tr>
+                      </tbody>
+                      <tbody aria-labelledby="glance-day-1">
+                        <tr class="adma-glance-spacer" aria-hidden="true"><td colspan="6"></td></tr>
+                        <tr class="adma-glance-day"><th colspan="6" id="glance-day-1" scope="rowgroup">Day 1, Nov 13, Friday</th></tr>
+                        <tr class="adma-glance-headings">
+                          <th scope="col">Time / Room</th><th scope="col">Duration<br>(mins)</th>
+                          <th scope="col">Riverside Ballroom, 1F</th><th scope="col">Taipo Room 1+2, 2F</th>
+                          <th scope="col">Taipo Room 3+4, 2F</th><th scope="col">Poster Area</th>
+                        </tr>
+                        <tr><th scope="row">09:00-18:00</th><td colspan="5">Registration</td></tr>
+                        <tr><th scope="row">09:15-09:30</th><td>15</td><td colspan="4" class="adma-glance-ceremony">Opening Ceremony @Riverside Ballroom, 1F</td></tr>
+                        <tr><th scope="row">09:30-10:30</th><td>60</td><td colspan="4" class="adma-glance-keynote">Keynote 1 @Riverside Ballroom, 1F</td></tr>
+                        <tr><th scope="row">10:30-11:00</th><td>30</td><td colspan="4">Tea Break</td></tr>
+                        <tr><th scope="row">11:00-12:30</th><td>90</td><td class="adma-glance-tutorial">Tutorial 1</td><td class="adma-glance-paper">Paper Session 1</td><td class="adma-glance-paper">Paper Session 2</td><td class="adma-glance-poster">Poster Session 1</td></tr>
+                        <tr><th scope="row">12:30-14:00</th><td>90</td><td colspan="4" class="adma-glance-meal">Lunch @The Forum, 1F</td></tr>
+                        <tr class="adma-glance-compact"><th scope="row">14:00-15:30</th><td>90</td><td rowspan="3" class="adma-glance-tutorial">Tutorial 2</td><td class="adma-glance-paper">Paper Session 3</td><td class="adma-glance-paper">Paper Session 4</td><td class="adma-glance-poster">Poster Session 2</td></tr>
+                        <tr><th scope="row">15:30-16:00</th><td>30</td><td colspan="3">Tea Break</td></tr>
+                        <tr class="adma-glance-compact"><th scope="row">16:00-17:30</th><td>90</td><td class="adma-glance-paper">Paper Session 5</td><td class="adma-glance-paper">Paper Session 6</td><td class="adma-glance-poster">Poster Session 3</td></tr>
+                        <tr><th scope="row">17:30-19:00</th><td>90</td><td colspan="4" class="adma-glance-meal">Welcome Reception @Bauhinia Room, 3F</td></tr>
+                      </tbody>
+                      <tbody aria-labelledby="glance-day-2">
+                        <tr class="adma-glance-spacer" aria-hidden="true"><td colspan="6"></td></tr>
+                        <tr class="adma-glance-day"><th colspan="6" id="glance-day-2" scope="rowgroup">Day 2, Nov 14, Saturday</th></tr>
+                        <tr class="adma-glance-headings">
+                          <th scope="col">Time / Room</th><th scope="col">Duration<br>(mins)</th>
+                          <th scope="col">Riverside Ballroom, 1F</th><th scope="col">Taipo Room 1+2, 2F</th>
+                          <th scope="col">Taipo Room 3+4, 2F</th><th scope="col">Poster Area</th>
+                        </tr>
+                        <tr><th scope="row">09:00-18:00</th><td colspan="5">Registration</td></tr>
+                        <tr><th scope="row">09:00-10:00</th><td>60</td><td colspan="4" class="adma-glance-keynote">Keynote 2 @Riverside Ballroom, 1F</td></tr>
+                        <tr><th scope="row">10:00-10:30</th><td>30</td><td colspan="4">Tea Break</td></tr>
+                        <tr><th scope="row">10:30-11:30</th><td>60</td><td colspan="4" class="adma-glance-panel">Panel Discussion @Riverside Ballroom, 1F</td></tr>
+                        <tr><th scope="row">11:30-13:00</th><td>90</td><td class="adma-glance-tutorial">Tutorial 3</td><td class="adma-glance-paper">Paper Session 7</td><td class="adma-glance-paper">Paper Session 8</td><td class="adma-glance-poster">Poster Session 4</td></tr>
+                        <tr><th scope="row">13:00-14:30</th><td>90</td><td colspan="4" class="adma-glance-meal">Lunch @The Forum, 1F</td></tr>
+                        <tr class="adma-glance-compact"><th scope="row">14:30-16:00</th><td>90</td><td class="adma-glance-special">RDI Special Session 1</td><td class="adma-glance-paper">Paper Session 9</td><td class="adma-glance-paper">Paper Session 10</td><td class="adma-glance-poster">Poster Session 5</td></tr>
+                        <tr><th scope="row">16:00-16:30</th><td>30</td><td colspan="4">Tea Break</td></tr>
+                        <tr class="adma-glance-compact"><th scope="row">16:30-18:00</th><td>90</td><td class="adma-glance-special">RDI Special Session 2</td><td class="adma-glance-paper">Paper Session 11</td><td class="adma-glance-paper">Paper Session 12</td><td class="adma-glance-poster">Poster Session 6</td></tr>
+                        <tr><th scope="row">18:00-18:30</th><td>30</td><td colspan="4">Shuttle to Banquet</td></tr>
+                        <tr><th scope="row">18:30-20:30</th><td>120</td><td colspan="4" class="adma-glance-meal">Conference Banquet @Choi Fook Royal Banquet (Fortune Metropolis)</td></tr>
+                        <tr><th scope="row">20:30-21:00</th><td>30</td><td colspan="4">Return Shuttle</td></tr>
+                      </tbody>
+                      <tbody aria-labelledby="glance-day-3">
+                        <tr class="adma-glance-spacer" aria-hidden="true"><td colspan="6"></td></tr>
+                        <tr class="adma-glance-day"><th colspan="6" id="glance-day-3" scope="rowgroup">Day 3, Nov 15, Sunday</th></tr>
+                        <tr class="adma-glance-headings">
+                          <th scope="col">Time / Room</th><th scope="col">Duration<br>(mins)</th>
+                          <th scope="col">Riverside Ballroom, 1F</th><th scope="col">Taipo Room 1+2, 2F</th>
+                          <th scope="col">Taipo Room 3+4, 2F</th><th scope="col">Poster Area</th>
+                        </tr>
+                        <tr><th scope="row">09:00-12:00</th><td colspan="5">Registration</td></tr>
+                        <tr><th scope="row">09:30-10:30</th><td>60</td><td colspan="4" class="adma-glance-keynote">Keynote 3 @Riverside Ballroom, 1F</td></tr>
+                        <tr><th scope="row">10:30-11:00</th><td>30</td><td colspan="4">Tea Break</td></tr>
+                        <tr><th scope="row">11:00-12:30</th><td>90</td><td class="adma-glance-special">PSTDA Special Session 1</td><td class="adma-glance-paper">Paper Session 13</td><td class="adma-glance-paper">Paper Session 14</td><td class="adma-glance-poster">Poster Session 7</td></tr>
+                        <tr><th scope="row">12:30-14:00</th><td>90</td><td colspan="4" class="adma-glance-meal">Lunch @The Forum, 1F</td></tr>
+                        <tr><th scope="row">14:00-15:30</th><td>90</td><td class="adma-glance-paper">Paper Session 15</td><td class="adma-glance-special">PSTDA Special Session 2</td><td class="adma-glance-paper">Paper Session 16</td><td class="adma-glance-poster">Poster Session 8</td></tr>
+                        <tr><th scope="row">15:30-16:00</th><td>30</td><td colspan="4">Tea Break</td></tr>
+                        <tr><th scope="row">16:00-17:30</th><td>90</td><td class="adma-glance-paper">Paper Session 17</td><td class="adma-glance-special">PSTDA Special Session 3</td><td class="adma-glance-paper">Paper Session 18</td><td class="adma-glance-poster">Poster Session 9</td></tr>
+                        <tr><th scope="row">17:45-18:00</th><td>15</td><td colspan="4" class="adma-glance-ceremony">Closing Remarks @Riverside Ballroom, 1F</td></tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <p class="mb-4" role="status" data-pdf-status>Loading program PDF…</p>
-                  <div class="adma-pdf-frame">
-                    <div class="adma-pdf-container" tabindex="0" role="region" aria-label="Program PDF pages">
-                      <div class="pdfViewer"></div>
-                    </div>
-                  </div>
-                  <noscript><p class="mt-4">Enable JavaScript to use the PDF viewer, or use the links above to open or download the PDF.</p></noscript>
-                </section>
+                </div>
               </div>
             </div>
           </main>
@@ -50,6 +111,5 @@
     </div>
     <script src="./js/load_header.js"></script>
     <script src="./js/load_footer.js"></script>
-    <script type="module" src="./js/adma2026-pdf-viewer.js?v=20261016-1"></script>
   </body>
 </html>

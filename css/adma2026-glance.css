@@ -1,0 +1,85 @@
+/* Dimensions and RGB fills measured from ADMA-2026-Program-Overview.pdf.
+   Container units preserve the PDF's proportions; narrow screens scroll the sheet. */
+.adma-glance-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.adma-glance-scroll:focus-visible {
+  outline: 2px solid #51247a;
+  outline-offset: 3px;
+}
+
+.adma-glance-sheet {
+  min-width: 848px;
+  container-type: inline-size;
+}
+
+.adma-glance-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 0.140647cqw solid #000;
+  background: #fff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.547117cqw;
+  font-weight: 400;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.adma-glance-time { width: 11.408451%; }
+.adma-glance-duration { width: 8.028169%; }
+.adma-glance-room { width: 20.140845%; }
+
+.adma-glance-table tr {
+  height: 2.531646cqw;
+}
+
+.adma-glance-table th,
+.adma-glance-table td {
+  border: 0.140647cqw solid #000;
+  padding: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.adma-glance-table .adma-glance-day,
+.adma-glance-table .adma-glance-headings {
+  background: #d7d7d7;
+}
+
+.adma-glance-table .adma-glance-day th,
+.adma-glance-table .adma-glance-headings th:nth-child(n + 3) {
+  font-weight: 700;
+}
+
+.adma-glance-table .adma-glance-headings {
+  height: 3.938116cqw;
+}
+
+.adma-glance-table .adma-glance-compact {
+  height: 1.969058cqw;
+}
+
+.adma-glance-ceremony { background: #f9cbaa; }
+.adma-glance-keynote { background: #b5c6ea; }
+.adma-glance-tutorial { background: #a8eae4; }
+.adma-glance-paper { background: #d9e1f4; }
+.adma-glance-poster { background: #f4def3; }
+.adma-glance-meal { background: #fee796; }
+.adma-glance-panel { background: #f4b7be; }
+.adma-glance-special { background: #add88d; }
+
+@media print {
+  .adma-glance-scroll { overflow: visible; }
+  .adma-glance-sheet { min-width: 0; }
+  .adma-glance-table {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
