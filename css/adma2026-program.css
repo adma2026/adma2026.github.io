@@ -1,0 +1,162 @@
+/* Structural rules only. Typography, colors, and spacing use the existing site utilities. */
+
+[data-adma-page] section[id],
+[data-adma-page] article[id],
+.adma-anchor-target {
+  scroll-margin-top: 5rem;
+}
+
+.adma-site-link {
+  color: #6200be;
+  text-decoration: underline;
+}
+
+.adma-table-wrap {
+  width: 100%;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.adma-plain-table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 1.4;
+}
+
+.adma-plain-table th,
+.adma-plain-table td {
+  border: 1px solid #818181;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.adma-plain-table th {
+  font-weight: 700;
+  text-align: left;
+}
+
+.adma-paper-table {
+  min-width: 760px;
+}
+
+.adma-paper-table th:first-child,
+.adma-paper-table td:first-child {
+  width: 10%;
+  text-align: center;
+}
+
+.adma-paper-table th:nth-child(2),
+.adma-paper-table td:nth-child(2) {
+  width: 45%;
+}
+
+.adma-schedule-table {
+  min-width: 900px;
+  table-layout: fixed;
+}
+
+.adma-schedule-table th,
+.adma-schedule-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.adma-schedule-table th:first-child {
+  width: 130px;
+}
+
+.adma-program-day {
+  margin-bottom: 3rem;
+}
+
+.adma-time-slot {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.adma-session-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.adma-session-featured {
+  margin-bottom: 1rem;
+}
+
+.adma-session-card {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid #818181;
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+
+.adma-session-card-wide {
+  grid-column: 1 / -1;
+}
+
+.adma-anchor-target {
+  display: block;
+  height: 0;
+}
+
+.adma-session-paper-list {
+  padding-left: 1.4rem;
+  list-style: decimal;
+}
+
+.adma-session-paper-list li {
+  margin-bottom: 1rem;
+}
+
+.adma-session-paper-list li:last-child {
+  margin-bottom: 0;
+}
+
+.adma-session-paper-authors,
+.adma-session-paper-type {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.adma-session-paper-type {
+  font-size: 0.875rem;
+}
+
+.adma-presenter {
+  box-sizing: border-box;
+  display: flex;
+  width: 33.3333%;
+  min-width: 180px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  padding: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.adma-presenter-wide {
+  width: 100%;
+}
+
+.adma-presenter img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (max-width: 640px) {
+  .adma-session-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .adma-presenter {
+    width: 100%;
+    min-width: 0;
+  }
+}
