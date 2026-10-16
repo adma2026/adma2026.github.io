@@ -598,7 +598,10 @@
 
   function tutorialScheduleLabels(tutorial) {
     const times = tutorial.times?.length ? tutorial.times : [tutorial.time];
-    return mergeContiguousTimeRanges(times).map((time) => `Day ${tutorial.day}, ${formatTimeRange(time)}`);
+    const date = String(tutorial.date || "").split(",")[0].trim();
+    return mergeContiguousTimeRanges(times).map(
+      (time) => `Day ${tutorial.day}, ${date}, ${formatTimeRange(time)}`
+    );
   }
 
   function renderTutorialAbstract(value) {
