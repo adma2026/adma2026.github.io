@@ -139,6 +139,7 @@
         day: tutorial.day,
         date: tutorial.date,
         time: tutorial.time,
+        times: tutorial.times,
         room: tutorial.room,
       })),
     ];
@@ -153,6 +154,7 @@
         record.speakerLine,
         record.date,
         record.time,
+        record.times?.join(" "),
         record.room,
         itemText,
         paperText,
@@ -347,7 +349,7 @@
             <p class="adma-session-kind">${escapeHtml(kindLabel)}</p>
             <h4>${escapeHtml(record.title)}</h4>
           </div>
-          <p class="adma-session-meta">${escapeHtml(record.time)}<br>${escapeHtml(record.room)}</p>
+          <p class="adma-session-meta">${escapeHtml(programRecordTime(record))}<br>${escapeHtml(record.room)}</p>
         </header>
         ${body}
       </article>`;
@@ -555,9 +557,18 @@
     }).join("");
   }
 
-  function tutorialScheduleLabel(tutorial) {
-    const time = String(tutorial.time || "").replace(/\s*-\s*/, " - ");
-    return `Day ${tutorial.day}, ${time}`;
+  function formatTimeRange(value) {
+    return String(value || "").replace(/\s*-\s*/, " - ");
+  }
+
+  function programRecordTime(record) {
+    const times = record.times?.length ? record.times : [record.time];
+    return times.map(formatTimeRange).join(" / ");
+  }
+
+  function tutorialScheduleLabels(tutorial) {
+    const times = tutorial.times?.length ? tutorial.times : [tutorial.time];
+    return times.map((time) => `Day ${tutorial.day}, ${formatTimeRange(time)}`);
   }
 
   function renderTutorials() {
@@ -575,7 +586,7 @@
           ${data.tutorials.map((tutorial) => `
             <tbody id="tutorial-${tutorial.number}">
               <tr>
-                <td>${escapeHtml(tutorialScheduleLabel(tutorial))}</td>
+                <td>${tutorialScheduleLabels(tutorial).map((label) => `<div>${escapeHtml(label)}</div>`).join("")}</td>
                 <td>${renderFormattedRuns(tutorial.titleRuns)}</td>
                 <td>${tutorial.authorLines.map((line) => `<div>${renderFormattedRuns(line)}</div>`).join("")}</td>
               </tr>

@@ -1245,7 +1245,7 @@ window.ADMA2026Content = {
           "cells": [
             {
               "room": "Riverside Ballroom, 1F",
-              "label": "",
+              "label": "Tutorial 2",
               "anchor": null
             },
             {
@@ -2586,6 +2586,9 @@ window.ADMA2026Content = {
       "day": 1,
       "date": "Nov 13, Friday",
       "time": "11:00-12:30",
+      "times": [
+        "11:00-12:30"
+      ],
       "room": "Riverside Ballroom, 1F"
     },
     {
@@ -2723,6 +2726,10 @@ window.ADMA2026Content = {
       "day": 1,
       "date": "Nov 13, Friday",
       "time": "14:00-15:30",
+      "times": [
+        "14:00-15:30",
+        "16:00-17:30"
+      ],
       "room": "Riverside Ballroom, 1F"
     },
     {
@@ -2780,6 +2787,9 @@ window.ADMA2026Content = {
       "day": 2,
       "date": "Nov 14, Saturday",
       "time": "11:30-13:00",
+      "times": [
+        "11:30-13:00"
+      ],
       "room": "Riverside Ballroom, 1F"
     }
   ],
