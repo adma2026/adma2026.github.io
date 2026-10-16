@@ -624,3 +624,9 @@ a.adma-overview-card:hover {
     min-width: 0;
   }
 }
+
+@media (max-width: 768px) {
+  [data-adma-page="keynotes"] .adma-content-block {
+    text-align: left;
+  }
+}

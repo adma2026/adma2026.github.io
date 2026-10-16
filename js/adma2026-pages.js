@@ -538,7 +538,7 @@
   function contentBlock(title, content) {
     return `
       ${sectionHeading(title)}
-      <div class="mb-4 justified-text">${content}</div>`;
+      <div class="adma-content-block mb-4 justified-text">${content}</div>`;
   }
 
   function textParagraphs(value) {
@@ -590,8 +590,8 @@
           </div>
           <p class="mb-4 text-center"><a class="${siteLinkClass}" href="${escapeHtml(keynote.profileUrl)}" target="_blank" rel="noreferrer">Official profile</a></p>
           ${contentBlock("Title", `<p>${escapeHtml(keynote.title)}</p>`)}
-          ${contentBlock("Abstract", `<p>${escapeHtml(keynote.abstract)}</p>`)}
-          ${contentBlock("Biography", `<p>${escapeHtml(keynote.biography)}</p>`)}
+          ${contentBlock("Abstract", textParagraphs(keynote.abstract))}
+          ${contentBlock("Biography", textParagraphs(keynote.biography))}
         </section>`).join("")}`;
   }
 

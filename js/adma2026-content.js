@@ -2656,12 +2656,12 @@ window.ADMA2026Content = {
       "speaker": "Jie Lu",
       "affiliation": "University of Technology Sydney, Australia",
       "title": "From Better Models to Better Decisions: Advanced Machine Learning Models and Applications",
-      "abstract": "This talk presents how advanced machine learning can learn from complex data to support data-driven decision-making in uncertain and dynamic environments. It covers transfer learning across multiple source domains, theories and algorithms for concept-drift detection and adaptation, and fuzzy machine learning for handling uncertainty, together with applications in healthcare, transportation, and agriculture.",
-      "biography": "Distinguished Professor Jie Lu AO is a scientist in computational intelligence whose work spans fuzzy machine learning, transfer learning, concept drift, recommender systems, and decision support. She is Director of the Australian Artificial Intelligence Institute and Director of the ARC Research Hub in Responsible AI for a Sustainable Grain Industry at the University of Technology Sydney. She has led major research projects, published six books and more than 500 papers, and supervised 60 PhD students to completion.",
+      "abstract": "This talk will present how advanced machine learning can innovatively and effectively learn from complex data to support data-driven decision-making in uncertain and dynamic environments. A set of advanced transfer learning models will be introduced to present how knowledge transfer from multiple source domains to a target domain, thereby addressing in-domain data insufficiency issues. A new suite of theories and algorithms for concept drift detection, understanding, and adaptation will be discussed, focusing on how to manage continuously evolving data stream environments with unpredictable pattern changes. These approaches can detect concept drift accurately, identifying when, where, and how drift occurs and enabling timely adaptive responses. In addition, fuzzy machine learning will be presented for addressing substantial uncertainties in data, learning processes, and decision outputs. These advanced machine learning capabilities have been applied to develop a range of real-world applications across multiple industry sectors, including healthcare, transportation, and agriculture for significantly strengthening data-driven prediction and decision support systems.",
+      "biography": "Distinguished Professor Jie Lu is a scientist in the field of computational intelligence, best known for her pioneering contributions to fuzzy machine learning, transfer learning, concept drift, recommender systems, and decision support systems. She is an IEEE Fellow, IFSA Fellow, Fellow of the Australian Computer Society, Australian Laureate Fellow, and Australian Industry Laureate Fellow. Professor Lu is the Director of the Australian Artificial Intelligence Institute (AAII) and Director of the Australian Research Council (ARC) Industry Transformation Research Hub (ITRH) “Responsible AI for a Sustainable Grain Industry” (gRAIn) at the University of Technology Sydney (UTS), Australia.\n\nProfessor Lu has won two ARC Laureate fellowship projects, ten ARC Discovery Projects and two ARC Linkage Projects as Lead Chief Investigator, an ARC Research Hub gRAIn as its Director, as well as over 20 industry-funded projects. Her total external research income exceeds $25 million. She has published six research books and more than 500 papers in leading journals and top international conferences. She has supervised 60 PhD students to completion.\n\nProfessor Lu serves as Editor-in-Chief of Knowledge-Based Systems. She has delivered more than 40 keynote addresses in international conferences. Her honours include three IEEE Transactions on Fuzzy Systems Outstanding Paper Awards (2019, 2022, and 2025), the NeurIPS 2022 Outstanding Paper Award, the Australia’s Most Innovative Engineer Award (2019), the Australasian AI Distinguished Research Contribution Award (2022), the NSW Premier’s Prize for Excellence in Engineering or Information and Communication Technology (2023), the iAwards 2025 NSW Merit Award, IEEE CIS Fuzzy Systems Pioneer Award (2027) and appointment as an Officer of the Order of Australia (AO) in the 2023 Australia Day Honours.",
       "photo": "img/portraits/jie-lu-adma2026.jpg",
       "profileUrl": "https://profiles.uts.edu.au/Jie.Lu",
       "sources": [
-        "S11"
+        "resources/1014/11/MLApplicationShortCV.docx"
       ],
       "day": 1,
       "date": "Nov 13, Friday",
@@ -2672,15 +2672,14 @@ window.ADMA2026Content = {
       "number": 2,
       "speaker": "Gao Cong",
       "affiliation": "Nanyang Technological University, Singapore",
-      "title": "Geospatial Entity Representation and City Foundation Models",
-      "abstract": "The talk covers geospatial entity representation for point objects, trajectories, and regions, together with applications such as spatial keyword search, POI recommendation, speed inference, and population estimation. It also presents self-supervised learning for geospatial entities and research toward city foundation models.",
-      "biography": "Gao Cong is a Professor in the College of Computing and Data Science at Nanyang Technological University and Head of the Division of Data Science. His research interests include data and AI systems, spatial data management, spatio-temporal data mining, and recommender systems. He is an ACM Distinguished Member and has served in leadership and editorial roles for major data-management and data-mining venues.",
+      "title": "Geospatial entity representation and city foundation models.",
+      "abstract": "The talk will cover the following research problems on geospatial AI: 1) Geospatial entity representation for point objects, trajectory, and regions and their applications, e.g., spatial keyword search, POI recommendation, speed inference, region population estimations, etc. 2) foundation models for geospatial applications and efforts toward city foundation models. The first part primarily concentrates on learning representations to facilitate geospatial entity querying and analysis. The second part focuses on self-supervised learning approaches applied to geospatial entities, and several research attempts towards city foundation models.",
+      "biography": "Gao Cong is currently a Professor in the College of Computing and Data Science at Nanyang Technological University. He serves as the head of Division of Data Science. He previously worked at Aalborg University, Denmark, Microsoft Research Asia, and the University of Edinburgh. His current research interests include Data and AI systems (DB4AI &AI4DB), spatial data management, spatial-temporal data mining, and recommendation systems. He is recognized as an ACM Distinguished Member for his work in spatial data management and spatial-temporal data mining. His citation in Google Scholar was over 26,000 with H-index 80. He received ACM SIGIR’25 test of time award honourable mention award, and the best paper runner-up awards at the ACM WSDM'20 and WSDM'22 conferences for two of his research papers. He serves as an associate editor for ACM Transactions on Database Systems (TODS) and IEEE TKDE. He served as a PC co-chair for ICDE’2022, the associate general chair of KDD’21, a PC co-chair for E&A track of VLDB 2014, and a PC vice-Chair for ICDE’18.",
       "photo": "img/portraits/gao-cong-adma2026.jpg",
-      "photoStatus": "needs-review",
       "profileUrl": "https://personal.ntu.edu.sg/gaocong/",
       "sources": [
-        "S9",
-        "S10 (photo pending confirmation)"
+        "resources/1014/9/Gao Cong_Talk.docx",
+        "resources/1014/10/微信图片_2026-10-14_223835_962.jpg"
       ],
       "day": 2,
       "date": "Nov 14, Saturday",
@@ -2693,11 +2692,12 @@ window.ADMA2026Content = {
       "affiliation": "The University of Hong Kong, Hong Kong, China",
       "title": "TBA",
       "abstract": "TBA",
-      "biography": "Reynold Cheng is Division Head of the AI & Data Science Division in the School of Computing and Data Science and a Professor at The University of Hong Kong. His research interests include data science, graph analytics, and data-uncertainty management. He received his BEng and MPhil from HKU and his MSc and PhD from Purdue University.",
+      "biography": "Reynold Cheng is a Professor at The University of Hong Kong and heads the AI & Data Science Division in its School of Computing and Data Science. His research spans data science, large-scale graph analysis, and methods for managing uncertain data. Before joining HKU, he was an Assistant Professor at The Hong Kong Polytechnic University from 2005 to 2008. He earned his BEng and MPhil at HKU, followed by MSc and PhD degrees from Purdue University.",
       "photo": "img/portraits/reynold-cheng-adma2026.jpg",
       "profileUrl": "https://ai.hku.hk/people/academic-staff/ckcheng",
       "sources": [
-        "HKU official profile; accessed 2026-10-15"
+        "https://reynold.hku.hk/",
+        "https://ai.hku.hk/people/academic-staff/ckcheng"
       ],
       "day": 3,
       "date": "Nov 15, Sunday",
@@ -2708,7 +2708,6 @@ window.ADMA2026Content = {
   "knownIssues": [
     "15 Full Papers do not appear in the supplied Paper or Special Sessions documents.",
     "32 accepted papers do not appear in the supplied Poster Sessions document.",
-    "Tutorial 3's proposal describes a 3-hour tutorial, while the public program schedules 1.5 hours.",
-    "The Gao Cong photo in S10 still requires human confirmation."
+    "Tutorial 3's proposal describes a 3-hour tutorial, while the public program schedules 1.5 hours."
   ]
 };
