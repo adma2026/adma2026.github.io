@@ -622,7 +622,80 @@ a.adma-overview-card:hover {
   object-position: center top;
 }
 
+.adma-keynote-header {
+  display: grid;
+  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.adma-keynote-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.adma-keynote-title {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.adma-pdf-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.adma-pdf-toolbar button {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #51247a;
+  border-radius: 4px;
+  background: #fff;
+  color: #51247a;
+  font: inherit;
+  cursor: pointer;
+}
+
+.adma-pdf-toolbar button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.adma-pdf-toolbar button:focus-visible,
+.adma-pdf-container:focus-visible {
+  outline: 2px solid #51247a;
+  outline-offset: 2px;
+}
+
+.adma-pdf-frame {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 32rem;
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+}
+
+.adma-pdf-container {
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+}
+
 @media (max-width: 640px) {
+  .adma-keynote-header {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  .adma-keynote-portrait {
+    max-width: 15rem;
+  }
+
   .adma-tutorial-title {
     font-size: 1.25rem;
   }

@@ -635,18 +635,19 @@
       ${pageHeading("ADMA2026 Keynotes", "Meet the three keynote speakers and explore their talks.", true)}
       <p class="mb-4 text-center"><strong>Jump to:</strong> ${data.keynotes.map((keynote) => `<a class="${siteLinkClass}" href="#keynote-${keynote.number}">Keynote ${keynote.number}</a>`).join(" · ")}</p>
       ${data.keynotes.map((keynote) => `
-        <section class="pt-9" id="keynote-${keynote.number}">
-          <p class="text-xl font-bold mt-6 mb-2 text-center leading-6">Keynote ${keynote.number}</p>
-          <p class="mb-4 text-center"><strong>${escapeHtml(keynote.date)} · ${escapeHtml(keynote.time)} · ${escapeHtml(keynote.room)}</strong></p>
-          <div class="flex flex-row justify-center flex-wrap">
-            <a class="adma-presenter adma-presenter-wide" href="${escapeHtml(keynote.profileUrl)}" target="_blank" rel="noreferrer">
+        <section class="pt-9" id="keynote-${keynote.number}" aria-labelledby="keynote-${keynote.number}-title">
+          <div class="adma-keynote-header">
+            <a class="adma-keynote-portrait" href="${escapeHtml(keynote.profileUrl)}" target="_blank" rel="noreferrer">
               <img class="rounded-lg" src="${escapeHtml(keynote.photo)}" alt="Portrait of ${escapeHtml(keynote.speaker)}" loading="lazy">
-              <p class="text-xl font-bold mt-6 mb-2 text-center leading-6">${escapeHtml(keynote.speaker)}</p>
-              <p class="mb-0 text-orgSmall text-gray-700 leading-5 text-center">${escapeHtml(keynote.affiliation)}</p>
             </a>
+            <div class="adma-keynote-summary">
+              <h2 class="adma-keynote-title font-headingStyle text-mainPurple font-bold" id="keynote-${keynote.number}-title">Keynote ${keynote.number}: ${escapeHtml(keynote.title)}</h2>
+              <p class="mb-4">${escapeHtml(keynote.date)} · ${escapeHtml(keynote.time)} · ${escapeHtml(keynote.room)}</p>
+              <p class="text-xl font-bold mb-2">Speaker: ${escapeHtml(keynote.speaker)}</p>
+              <p class="mb-2">${escapeHtml(keynote.affiliation)}</p>
+              <p><a class="${siteLinkClass}" href="${escapeHtml(keynote.profileUrl)}" target="_blank" rel="noreferrer">Official profile</a></p>
+            </div>
           </div>
-          <p class="mb-4 text-center"><a class="${siteLinkClass}" href="${escapeHtml(keynote.profileUrl)}" target="_blank" rel="noreferrer">Official profile</a></p>
-          ${contentBlock("Title", `<p>${escapeHtml(keynote.title)}</p>`)}
           ${contentBlock("Abstract", textParagraphs(keynote.abstract))}
           ${contentBlock("Biography", textParagraphs(keynote.biography))}
         </section>`).join("")}`;

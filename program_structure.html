@@ -1,58 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charSet="utf-8"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"/>
-
-    <link rel = "stylesheet" type = 'text/css' href = './css/sub_common.css'/>
-
-    <meta name="generator" content="Gatsby 4.3.0"/>
-    <noscript>
-      <style>
-        .gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}
-      </style>
-    </noscript>
-    <script type="module">
-      const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;
-      e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);
-    </script>
-    <meta name="theme-color" content="#51247a"/>
-    <script type = "text/javascript" src = './js/common.js'></script>
-    <title data-react-helmet="true">ADMA 2026 - Hong Kong, China</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
+    <meta name="theme-color" content="#51247a">
+    <title>Program at a Glance | ADMA 2026</title>
+    <link rel="stylesheet" type="text/css" href="./css/sub_common.css">
+    <link rel="stylesheet" type="text/css" href="./vendor/pdfjs/web/pdf_viewer.css">
+    <link rel="stylesheet" type="text/css" href="./css/adma2026-program.css?v=20261016-12">
+    <script type="text/javascript" src="./js/common.js"></script>
   </head>
   <body>
-    <body>
-  <div id="___gatsby">
-    <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
-      <div class="w-full min-h-screen flex flex-col" data-is-root-path="true">
-        <div id="header-placeholder"></div>
-        <div class="w-full h-16"></div>
-    To be announced.
+    <div id="___gatsby">
+      <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+        <div class="w-full min-h-screen flex flex-col" data-is-root-path="true">
+          <div id="header-placeholder"></div>
+          <div class="w-full h-16"></div>
+          <main class="w-full">
+            <div class="global-wrapper pb-12" style="max-width:59rem" id="welcome">
+              <div class="px-0 sm:px-7">
+                <h2 class="pt-9 mb-5 font-titleFont text-3xl text-mainPurple font-extrabold">Program at a Glance</h2>
+                <p class="mb-4">
+                  <a class="adma-site-link" href="./documents/ADMA-2026-Program-Overview.pdf" target="_blank" rel="noreferrer">Open PDF in a new tab</a>
+                  · <a class="adma-site-link" href="./documents/ADMA-2026-Program-Overview.pdf" download>Download PDF</a>
+                </p>
+                <section aria-label="Program at a Glance PDF viewer" data-pdf-viewer>
+                  <div class="adma-pdf-toolbar" role="group" aria-label="PDF controls">
+                    <button type="button" data-pdf-zoom-out aria-label="Zoom out" disabled>−</button>
+                    <output data-pdf-scale aria-label="Zoom level">—</output>
+                    <button type="button" data-pdf-zoom-in aria-label="Zoom in" disabled>+</button>
+                    <button type="button" data-pdf-fit disabled>Fit width</button>
+                    <span data-pdf-page-count></span>
+                  </div>
+                  <p class="mb-4" role="status" data-pdf-status>Loading program PDF…</p>
+                  <div class="adma-pdf-frame">
+                    <div class="adma-pdf-container" tabindex="0" role="region" aria-label="Program PDF pages">
+                      <div class="pdfViewer"></div>
+                    </div>
+                  </div>
+                  <noscript><p class="mt-4">Enable JavaScript to use the PDF viewer, or use the links above to open or download the PDF.</p></noscript>
+                </section>
+              </div>
+            </div>
+          </main>
+          <div id="footer-placeholder"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <script>
-      function show_mobile_nav()
-      {
-        var current_class = document.getElementById('mobile_menu').className;
-        if (current_class == 'hidden')
-        {
-          document.getElementById('mobile_menu').setAttribute('class', 'md:hidden');
-          document.getElementById('menu_icon_1').setAttribute('class', 'hidden h-6 w-6');
-          document.getElementById('menu_icon_2').setAttribute('class', 'block h-6 w-6');
-        }
-        else
-        {
-          document.getElementById('mobile_menu').setAttribute('class', 'hidden');
-          document.getElementById('menu_icon_1').setAttribute('class', 'block h-6 w-6');
-          document.getElementById('menu_icon_2').setAttribute('class', 'hidden h-6 w-6');
-        }
-      }
-    </script>
-    <script src="js/load_header.js"></script>
-    <script src="js/load_footer.js"></script>
+    <script src="./js/load_header.js"></script>
+    <script src="./js/load_footer.js"></script>
+    <script type="module" src="./js/adma2026-pdf-viewer.js?v=20261016-1"></script>
   </body>
 </html>

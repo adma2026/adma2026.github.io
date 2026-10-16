@@ -4,7 +4,7 @@ window.ADMA2026Content = {
     "conference": "ADMA 2026",
     "generatedAt": "2026-10-16",
     "publicationStatus": "review-preview",
-    "sourceRoot": "resources/1014 and resources/1015/special-sessions (read-only)"
+    "sourceRoot": "resources/1014, resources/1015/special-sessions, and resources/1016/2 (read-only)"
   },
   "papers": [
     {
@@ -2680,7 +2680,7 @@ window.ADMA2026Content = {
           "affiliation": "Edith Cowan University, Australia"
         }
       ],
-      "source": "resources/1014/6/ADMA'26 Tutorials.docx",
+      "source": "resources/1016/2/ADMA'26 Tutorials.docx",
       "abstract": "Graph learning has been widely adopted in real-world applications to effectively capture complex structural dependencies and semantic information from graph-structured data. However, traditional methods, such as graph neural network (GNN)-based methods, face two fundamental limitations: they typically apply one-size-fits-all message-passing mechanisms to all nodes despite substantial structural and semantic heterogeneity, and they often require graph-specific training, resulting in limited transferability and generalization across different graphs and tasks. In response, Agentic Graph Learning (AGL) has recently emerged as a promising new paradigm for graph learning. By leveraging the reasoning and planning capabilities of large language models, AGL formulates graph learning as a sequential decision-making process, where agents autonomously plan their interactions with graph environments and progressively acquire task-relevant structural and semantic evidence through graph-native tools. In this tutorial, we aim to provide a comprehensive introduction to AGL, spanning its foundations and recent frontiers. We will cover: (1) the fundamental concepts, motivations, and key building blocks of agentic graph learning; (2) a systematic taxonomy of existing AGL methods, including single-agent graph reasoning, multi-agent collaboration, and their associated training strategies and applications; and (3) the key limitations, open challenges, and future research directions of AGL. Through this tutorial, we aim to provide a clear foundation for AGL and inspire future research and applications.",
       "abstractSource": "resources/1014/7/ADMA2026_Tutorial_AGL_Proposal.pdf",
       "day": 1,
@@ -2822,7 +2822,7 @@ window.ADMA2026Content = {
           "affiliation": "City University of Hong Kong"
         }
       ],
-      "source": "resources/1014/6/ADMA'26 Tutorials.docx",
+      "source": "resources/1016/2/ADMA'26 Tutorials.docx",
       "abstract": "In the current digital era, Deep Recommender Systems (DRS) are essential for navigating and tailoring online content to individual preferences. However, conventional approaches that rely primarily on a single recommendation task, scenario, data modality, or user behavior are increasingly inadequate for capturing users’ complex and evolving preferences. This limitation highlights the need for joint modeling approaches that integrate multiple tasks, scenarios, modalities, and behaviors within the recommendation process, enhancing recommendation precision, efficiency, and personalization. In this tutorial, we aim to give a comprehensive survey on the recent progress of the joint modeling methods in recommendations, which includes multi-task, multi-scenario, multi-modal, and multi-behavior modeling, as well as how large language models and generative models reshape these dimensions. This work will provide academic researchers and industry professionals with a thorough understanding and clear insight into these areas, sparking new ideas, fostering discussions, and driving technological advancements in the field of deep recommender systems.",
       "abstractSource": "resources/1014/5/2026_ADMA_Tutorial_Joint_Modeling_in_Recommendations.pdf",
       "day": 1,
@@ -2846,10 +2846,10 @@ window.ADMA2026Content = {
           "underline": true
         }
       ],
-      "title": "Vector Search for the Future: From Memory-Resident, Static Heterogeneous Storage, to Cloud-Native Architectures",
+      "title": "Disk-Based Vector Search: Methods, Systems, and Empirical Analysis",
       "titleRuns": [
         {
-          "text": "3. Vector Search for the Future: From Memory-Resident, Static Heterogeneous Storage, to Cloud-Native Architectures ",
+          "text": "3. Disk-Based Vector Search: Methods, Systems, and Empirical Analysis ",
           "bold": false,
           "italic": false,
           "underline": false
@@ -2865,7 +2865,13 @@ window.ADMA2026Content = {
       "authorLines": [
         [
           {
-            "text": "Yitong Song, Huiling Li, Yushuai Ji (Hong Kong Baptist University)",
+            "text": "Yitong Song, Huiling Li, Yushuai Ji",
+            "bold": true,
+            "italic": false,
+            "underline": false
+          },
+          {
+            "text": " (Hong Kong Baptist University)",
             "bold": false,
             "italic": false,
             "underline": false
@@ -2886,7 +2892,7 @@ window.ADMA2026Content = {
           "affiliation": "Hong Kong Baptist University"
         }
       ],
-      "source": "resources/1014/6/ADMA'26 Tutorials.docx",
+      "source": "resources/1016/2/ADMA'26 Tutorials.docx",
       "abstract": "Vector search (VS) has become a fundamental component in multimodal data management, enabling core functionalities such as image, video, and code retrieval. As vector data scales rapidly, VS faces growing challenges in balancing search, latency, scalability, and cost. The evolution of VS has been closely driven by changes in storage architecture. Early VS methods rely on all-in-memory designs for low latency, but scalability is constrained by memory capacity and cost. To address this, recent research has adopted heterogeneous architectures that offload space-intensive vectors and index structures to SSDs, while exploiting block locality and I/O-efficient strategies to maintain high search performance at billion scale. Looking ahead, the increasing demand for trillion-scale vector retrieval and cloud-native elasticity is driving a further shift toward memory–SSD–object storage architectures, which enable cost-efficient data tiering and seamless scalability.\n\nIn this tutorial, we review the evolution of VS techniques from a storage-architecture perspective. We first review memory-resident methods, covering classical IVF-, hash-, quantization-, and graph-based designs. We then present a systematic overview of heterogeneous storage VS techniques, including their index designs, block-level layouts, query strategies, and update mechanisms. Finally, we examine emerging cloud-native systems and highlight open research opportunities for future large-scale vector retrieval systems.",
       "abstractSource": "resources/1014/8/Vector Search for the Future- From Memory-Resident, Static H.pdf",
       "day": 2,
