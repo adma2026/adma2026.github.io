@@ -175,7 +175,7 @@
     { id: "all", label: "All" },
     { id: "paper", label: "Paper" },
     { id: "poster", label: "Poster" },
-    { id: "special", label: "Special" },
+    { id: "special", label: "Special Sessions" },
     { id: "keynote", label: "Keynote" },
     { id: "tutorial", label: "Tutorial" },
   ];
@@ -509,7 +509,7 @@
 
   function renderProgramDetails() {
     root.innerHTML = `
-      ${pageHeading("ADMA 2026 Conference Program", "Browse the full schedule, search session content, and open detailed paper, poster, special, keynote, and tutorial information.")}
+      ${pageHeading("ADMA 2026 Conference Program", "Browse the full schedule, search session content, and open detailed paper, poster, special sessions, keynote, and tutorial information.")}
       <nav class="adma-program-nav" aria-label="Program navigation and search">
         <div class="adma-program-jump-links">
           <a href="#program-overview">Program Overview</a>
