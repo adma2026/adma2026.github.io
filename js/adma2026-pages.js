@@ -250,8 +250,13 @@
 
   function isProgramWideEvent(row) {
     if (row.general) return true;
-    const populated = row.cells.filter((cell) => cell.label);
+    const populated = row.cells.filter((cell) => cell.label && !cell.covered);
+    if (populated.some((cell) => cell.rowSpan > 1 || cell.colSpan > 1)) return false;
     return populated.length === 1 && !/^(?:Paper|Poster|PSTDA|RDI|Tutorial)\b/.test(populated[0].label);
+  }
+
+  function programGridPosition(rowIndex, roomIndex, rowSpan = 1, colSpan = 1) {
+    return `grid-row:${rowIndex + 2} / span ${rowSpan};grid-column:${roomIndex + 2} / span ${colSpan}`;
   }
 
   function renderProgramOverviewGrid(day) {
@@ -260,19 +265,26 @@
         <div class="adma-program-grid" style="--adma-room-count:${day.rooms.length}">
           <div class="adma-program-grid-corner">Time</div>
           ${day.rooms.map((room) => `<div class="adma-program-room">${escapeHtml(room)}</div>`).join("")}
-          ${day.rows.map((row) => {
-            const populated = row.cells.filter((cell) => cell.label);
+          ${day.rows.map((row, rowIndex) => {
+            const populated = row.cells.filter((cell) => cell.label && !cell.covered);
             const wide = isProgramWideEvent(row);
             const wideCell = row.general
               ? { label: row.general, room: "", anchor: null }
               : populated[0];
             return `
-              <div class="adma-program-time">${escapeHtml(row.time)}</div>
+              <div class="adma-program-time" style="${programGridPosition(rowIndex, -1)}">${escapeHtml(row.time)}</div>
               ${wide
-                ? renderProgramOverviewCard(wideCell, true)
-                : row.cells.map((cell) => cell.label
-                  ? `<div class="adma-program-cell">${renderProgramOverviewCard(cell)}</div>`
-                  : '<div class="adma-program-cell adma-program-cell-empty" aria-label="No scheduled event"></div>').join("")}`;
+                ? `<div class="adma-program-cell adma-program-cell-wide" style="${programGridPosition(rowIndex, 0, 1, day.rooms.length)}">${renderProgramOverviewCard(wideCell, true)}</div>`
+                : row.cells.map((cell, roomIndex) => {
+                  if (cell.covered) return "";
+                  const rowSpan = cell.rowSpan || 1;
+                  const colSpan = cell.colSpan || 1;
+                  const style = programGridPosition(rowIndex, roomIndex, rowSpan, colSpan);
+                  const cellClasses = `adma-program-cell${colSpan > 1 ? " adma-program-cell-wide" : ""}`;
+                  return cell.label
+                    ? `<div class="${cellClasses}" style="${style}">${renderProgramOverviewCard(cell, colSpan === day.rooms.length)}</div>`
+                    : `<div class="adma-program-cell adma-program-cell-empty" style="${style}" aria-label="No scheduled event"></div>`;
+                }).join("")}`;
           }).join("")}
         </div>
       </div>`;

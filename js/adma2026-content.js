@@ -1057,22 +1057,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Opening Ceremony @Riverside Ballroom, 1F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1084,22 +1089,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Keynote 1 @Riverside Ballroom, 1F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1111,22 +1121,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Tea Break",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1165,22 +1180,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Lunch @The Forum, 1F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1192,7 +1212,9 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Tutorial 2",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 3,
+              "colSpan": 1
             },
             {
               "room": "Taipo Room 1+2, 2F",
@@ -1218,23 +1240,28 @@ window.ADMA2026Content = {
           "cells": [
             {
               "room": "Riverside Ballroom, 1F",
-              "label": "",
-              "anchor": null
+              "label": "Tutorial 2",
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "Tea Break",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 3
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1246,7 +1273,8 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Tutorial 2",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 1+2, 2F",
@@ -1273,22 +1301,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Welcome Reception @Bauhinia Room, 3F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         }
@@ -1340,22 +1373,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Keynote 2 @Riverside Ballroom, 1F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1367,22 +1405,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Tea Break",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1394,22 +1437,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Panel Discussion @Riverside Ballroom, 1F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1448,22 +1496,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Lunch @The Forum, 1F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1502,22 +1555,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Tea Break",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1556,22 +1614,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Shuttle to Banquet",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1583,22 +1646,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Conference Banquet @Choi Fook Royal Banquet (Fortune Metropolis)",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1610,22 +1678,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Return Shuttle",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         }
@@ -1677,22 +1750,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Keynote 3 @Riverside Ballroom, 1F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1704,22 +1782,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Tea Break",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1758,22 +1841,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Lunch @The Forum, 1F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1812,22 +1900,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Tea Break",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         },
@@ -1866,22 +1959,27 @@ window.ADMA2026Content = {
             {
               "room": "Riverside Ballroom, 1F",
               "label": "Closing Remarks @Riverside Ballroom, 1F",
-              "anchor": null
+              "anchor": null,
+              "rowSpan": 1,
+              "colSpan": 4
             },
             {
               "room": "Taipo Room 1+2, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Taipo Room 3+4, 2F",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             },
             {
               "room": "Poster Area",
               "label": "",
-              "anchor": null
+              "anchor": null,
+              "covered": true
             }
           ]
         }
@@ -2728,6 +2826,7 @@ window.ADMA2026Content = {
       "time": "14:00-15:30",
       "times": [
         "14:00-15:30",
+        "15:30-16:00",
         "16:00-17:30"
       ],
       "room": "Riverside Ballroom, 1F"
