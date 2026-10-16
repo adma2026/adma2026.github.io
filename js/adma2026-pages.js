@@ -559,8 +559,14 @@
     return String(value ?? "").split(/\n\s*\n/).map((paragraph) => `<p class="mb-4">${escapeHtml(paragraph)}</p>`).join("");
   }
 
-  function tutorialAuthorLine(runs) {
-    return (runs || []).map((run) => run.text).join("");
+  function renderFormattedRuns(runs) {
+    return (runs || []).map((run) => {
+      let output = escapeHtml(run.text);
+      if (run.bold) output = `<strong>${output}</strong>`;
+      if (run.italic) output = `<em>${output}</em>`;
+      if (run.underline) output = `<u>${output}</u>`;
+      return output;
+    }).join("");
   }
 
   function formatTimeRange(value) {
@@ -611,7 +617,7 @@
           <section class="adma-tutorial-detail" id="tutorial-${tutorial.number}" aria-labelledby="tutorial-${tutorial.number}-title">
             <h2 class="adma-tutorial-title" id="tutorial-${tutorial.number}-title">${escapeHtml(tutorial.title)}</h2>
             <div class="adma-tutorial-authors" aria-label="Authors">
-              ${tutorial.authorLines.map((line) => `<p class="adma-tutorial-author-line">${escapeHtml(tutorialAuthorLine(line))}</p>`).join("")}
+              ${tutorial.authorLines.map((line) => `<p class="adma-tutorial-author-line">${renderFormattedRuns(line)}</p>`).join("")}
             </div>
             <p class="adma-tutorial-time"><strong>Time:</strong> ${tutorialScheduleLabels(tutorial).map(escapeHtml).join(" / ")}</p>
             <div class="adma-tutorial-abstract">
