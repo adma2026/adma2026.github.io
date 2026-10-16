@@ -573,14 +573,32 @@
     return String(value || "").replace(/\s*-\s*/, " - ");
   }
 
+  function mergeContiguousTimeRanges(values) {
+    const merged = [];
+    for (const value of values) {
+      const [start, end] = String(value || "").split(/\s*-\s*/);
+      if (!start || !end) {
+        merged.push({ start: String(value || ""), end: "" });
+        continue;
+      }
+      const previous = merged.at(-1);
+      if (previous?.end === start) {
+        previous.end = end;
+      } else {
+        merged.push({ start, end });
+      }
+    }
+    return merged.map(({ start, end }) => end ? `${start}-${end}` : start);
+  }
+
   function programRecordTime(record) {
     const times = record.times?.length ? record.times : [record.time];
-    return times.map(formatTimeRange).join(" / ");
+    return mergeContiguousTimeRanges(times).map(formatTimeRange).join(" / ");
   }
 
   function tutorialScheduleLabels(tutorial) {
     const times = tutorial.times?.length ? tutorial.times : [tutorial.time];
-    return times.map((time) => `Day ${tutorial.day}, ${formatTimeRange(time)}`);
+    return mergeContiguousTimeRanges(times).map((time) => `Day ${tutorial.day}, ${formatTimeRange(time)}`);
   }
 
   function renderTutorials() {
