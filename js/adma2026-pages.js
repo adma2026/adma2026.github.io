@@ -636,7 +636,7 @@
       <p class="mb-4 text-center"><strong>Jump to:</strong> ${data.keynotes.map((keynote) => `<a class="${siteLinkClass}" href="#keynote-${keynote.number}">Keynote ${keynote.number}</a>`).join(" · ")}</p>
       ${data.keynotes.map((keynote) => `
         <section class="pt-9" id="keynote-${keynote.number}" aria-labelledby="keynote-${keynote.number}-title">
-          ${keynote.number === 1 || keynote.number === 3 ? `<p class="adma-keynote-day font-headingStyle text-mainPurple font-bold">Day${keynote.number === 1 ? 1 : 2}</p>` : ""}
+          <p class="adma-keynote-day font-headingStyle text-mainPurple font-bold">Day${escapeHtml(keynote.day)}</p>
           <div class="adma-keynote-header">
             <a class="adma-keynote-portrait" href="${escapeHtml(keynote.profileUrl)}" target="_blank" rel="noreferrer">
               <img class="rounded-lg" src="${escapeHtml(keynote.photo)}" alt="Portrait of ${escapeHtml(keynote.speaker)}" loading="lazy">
