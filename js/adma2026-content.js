@@ -2,9 +2,9 @@
 window.ADMA2026Content = {
   "meta": {
     "conference": "ADMA 2026",
-    "generatedAt": "2026-10-16",
+    "generatedAt": "2026-10-23",
     "publicationStatus": "review-preview",
-    "sourceRoot": "resources/1014, resources/1015/special-sessions, and resources/1016/2 (read-only)"
+    "sourceRoot": "resources/1014, resources/1015/special-sessions, resources/1016/2, and resources/1023 (read-only)"
   },
   "papers": [
     {
@@ -2489,7 +2489,13 @@ window.ADMA2026Content = {
       "items": [
         {
           "kind": "invited",
-          "label": "RDI Invited Talk"
+          "label": "RDI Invited Talk 1",
+          "talkId": "rdi-1"
+        },
+        {
+          "kind": "invited",
+          "label": "RDI Invited Talk 2",
+          "talkId": "rdi-2"
         }
       ],
       "day": 2,
@@ -2539,7 +2545,8 @@ window.ADMA2026Content = {
       "items": [
         {
           "kind": "invited",
-          "label": "PSTDA Invited Talk 1"
+          "label": "PSTDA Invited Talk 1",
+          "talkId": "pstda-1"
         },
         {
           "kind": "paper",
@@ -2564,7 +2571,8 @@ window.ADMA2026Content = {
       "items": [
         {
           "kind": "invited",
-          "label": "PSTDA Invited Talk 2"
+          "label": "PSTDA Invited Talk 2",
+          "talkId": "pstda-2"
         },
         {
           "kind": "paper",
@@ -2597,7 +2605,8 @@ window.ADMA2026Content = {
       "items": [
         {
           "kind": "invited",
-          "label": "PSTDA Invited Talk 3"
+          "label": "PSTDA Invited Talk 3",
+          "talkId": "pstda-3"
         },
         {
           "kind": "paper",
@@ -2944,19 +2953,114 @@ window.ADMA2026Content = {
       "number": 3,
       "speaker": "Reynold Cheng",
       "affiliation": "The University of Hong Kong, Hong Kong, China",
-      "title": "TBA",
-      "abstract": "TBA",
-      "biography": "Reynold Cheng is a Professor of the Department of Computer Science in the University of Hong Kong (HKU). His research interests are in data science, big graph analytics and uncertain data management. He was an Assistant Professor in the Department of Computing of the Hong Kong Polytechnic University (HKPU) from 2005 to 2008. He received his BEng (Computer Engineering) in 1998, and MPhil (Computer Science and Information Systems) in 2000 from HKU. He then obtained his MSc and PhD degrees from Department of Computer Science of Purdue University in 2003 and 2005.\n\nProf. Cheng received the SIGMOD Research Highlights Reward 2020, HKICT Awards 2021, and HKU Knowledge Exchange Award (Engineering) 2021. He was granted an Outstanding Young Researcher Award 2011-12 by HKU. He received the Universitas 21 Fellowship in 2011, and two Performance Awards from HKPU Computing in 2006 and 2007. He is an academic advisor to the College of Professional and Continuing Education of HKPU. He is a member of IEEE, ACM, ACM SIGMOD, and UPE. He was a PC co-chair of IEEE ICDE 2021, and has been serving on the program committees and review panels for leading database conferences and journals like SIGMOD, VLDB, ICDE, KDD, IJCAI, AAAI, and TODS. He is on the editorial board of IS and DAPD, and was a former editorial board member of TKDE.",
-      "photo": "img/portraits/reynold-cheng-adma2026.jpg",
+      "title": "On Data Intelligence of AI Models",
+      "abstract": "Database systems, which provide various operations for defining and querying data, enable large-scale AI systems and intelligent applications in various domains. Due to recent advances in large language models (LLMs), automating database operations through code generation has become increasingly attainable. This capability has given rise to a new paradigm, Data-Centric Code Generation (DCCG), which aims to build systems that can automatically understand, manipulate, and reason over data.\n\nTo realize DCCG, I will discuss our team’s effort in building benchmarking systems, including BIRD, a large-scale Text-to-SQL benchmark on real databases, and SWE-SQL, which gauges the ability that an LLM resolves user SQL issues. These benchmarks, widely used in the industry, reveal hallucination and other issues faced by LLMs. To address these challenges, I will present our work in graph-aware reasoning, SQL correction, and multi-turn tabular data analysis. They aim to evolve LLMs from static code generators into autonomous, trustworthy AI models that can understand and generate data-driven software systems.",
+      "biography": "Prof. Reynold Cheng is the Department Head and Professor (AI & Data Science), at the School of Computing and Data Science in the University of Hong Kong (HKU) established in 2024. He is an ACM Distinguished Member and an IEEE Senior Member. He is a Steering Committee Member of the HKU Musketeers Foundation Institute of Data Science. He is an academic advisor to the College of Professional and Continuing Education of HKPU. He was the Head of Computer Science in 2024, and an Associate Dean of Engineering in 2022-24. His research interests are in data science, big graph analytics and uncertain databases.\n\nProfessor Cheng is named the AI 2000 Most Influential Scholar Honorable Mention in Database for four consecutive years (2023 to 2026). He received the HKU Outstanding Research Student Supervisor Award in 2023. He was listed as the World’s Top 2% Scientists by Stanford University. He received the SIGMOD Research Highlights Reward 2020, International Exhibition of Inventions Geneva Award (2026), HKICT Awards (2021, 2023), HKU Knowledge Exchange Award (2024), HKU Engineering Knowledge Exchange Award (2024, 2021), HKU Engineering Best Teaching Award (2023, 2024), and HKU Outstanding Young Researcher Award 2011-12. He received the Universitas 21 Fellowship in 2011, and Hong Kong Polytechnic University Computing Performance Awards (2006, 2007). He was a PC co-chair of IEEE ICDE 2021. He is on the editorial board of PVLDB, ACM TSAS, IS, DAPD, and DSEJ.",
+      "photo": "img/portraits/reynold-cheng-adma2026-20261023.jpg",
       "profileUrl": "https://ai.hku.hk/people/academic-staff/ckcheng",
       "sources": [
-        "https://reynold.hku.hk/",
-        "https://ai.hku.hk/people/academic-staff/ckcheng"
+        "resources/1023/0/Keynote 3.docx",
+        "resources/1023/1/reynold-cheng.jpg"
       ],
       "day": 3,
       "date": "Nov 15, Sunday",
       "time": "09:30-10:30",
       "room": "Riverside Ballroom, 1F"
+    }
+  ],
+  "invitedTalks": [
+    {
+      "id": "rdi-1",
+      "label": "RDI Invited Talk 1",
+      "series": "RDI",
+      "number": 1,
+      "sessionId": "rdi-1",
+      "source": "resources/1023/2/Invited Talks.docx",
+      "day": 2,
+      "date": "Nov 14, Saturday",
+      "room": "Riverside Ballroom, 1F",
+      "sessionTime": "14:30-16:00",
+      "speaker": "Arijit Khan",
+      "affiliation": "Bowling Green State University, USA",
+      "duration": "40 minutes, including Q&A",
+      "title": "Towards Graph-native LLMs and Agentic Systems: Rethinking the AI Harness",
+      "abstract": "This talk examines how graph-native approaches can address limitations in structured and multi-hop reasoning by large language models (LLMs). It reconsiders the AI harness: the retrieval, tools, memory, and orchestration surrounding a model. The first part presents knowledge graph-based retrieval-augmented generation (KG-RAG) as a graph-native retrieval layer for domain-specific schema matching, entity alignment, and fact verification. The second part explores agentic LLM systems whose harness is itself graph-structured, connecting tools, actions, memory, and knowledge. It introduces an evaluation framework that identifies, measures, and explains misalignment during graph-structured reasoning within the harness, highlighting the role of system design in reliable AI performance.",
+      "biography": "Arijit Khan is an Associate Professor at Bowling Green State University, USA. He received his PhD from the University of California, Santa Barbara, and completed postdoctoral research in the Systems group at ETH Zurich, Switzerland. He previously held an assistant professorship at Nanyang Technological University, Singapore, and an associate professorship at Aalborg University, Denmark. His research focuses on data management and artificial intelligence for emerging challenges in large graphs. He is an IEEE Senior Member and an ACM Distinguished Speaker. He has authored a book on uncertain graphs and more than 130 publications, with work appearing in leading data management and AI venues.",
+      "photo": "img/portraits/arijit-khan-adma2026.jpg"
+    },
+    {
+      "id": "rdi-2",
+      "label": "RDI Invited Talk 2",
+      "series": "RDI",
+      "number": 2,
+      "sessionId": "rdi-1",
+      "source": "resources/1023/2/Invited Talks.docx",
+      "day": 2,
+      "date": "Nov 14, Saturday",
+      "room": "Riverside Ballroom, 1F",
+      "sessionTime": "14:30-16:00",
+      "speaker": "Guanfeng Liu",
+      "affiliation": "Macquarie University, Australia",
+      "duration": "40 minutes, including Q&A",
+      "title": "Trust Management in Online Social Networks",
+      "abstract": "This keynote examines trust management in online social networks, where trust enables people to interact, share information, and make decisions. Establishing reliable trust remains challenging: social relationships change, information may be incomplete or uncertain, and users may behave inconsistently or strategically. These conditions motivate methods that account for the complexity of online interactions. The keynote provides an overview of how trust can be represented, evaluated, propagated, and applied to support online decision-making. It discusses trust inference, social influence, information credibility, and uncertainty, alongside the scalability of trust computation in large and dynamic networks.",
+      "biography": "Guanfeng Liu is an Associate Professor at Macquarie University, Australia. His research spans trust management, online social networks, artificial intelligence, data science, and intelligent information systems. He studies how trust can be modelled, evaluated, and applied in complex online environments, with a focus on supporting reliable decision-making. His work addresses trust-aware social computing and recommendation, alongside information credibility, social influence, and data-driven decision-making. He has published extensively in these areas and contributed to the development of trust and social network analysis techniques for large-scale and dynamic online environments.",
+      "photo": "img/portraits/guanfeng-liu-adma2026.jpg"
+    },
+    {
+      "id": "pstda-1",
+      "label": "PSTDA Invited Talk 1",
+      "series": "PSTDA",
+      "number": 1,
+      "sessionId": "pstda-1",
+      "source": "resources/1023/2/Invited Talks.docx",
+      "day": 3,
+      "date": "Nov 15, Sunday",
+      "room": "Riverside Ballroom, 1F",
+      "sessionTime": "11:00-12:30",
+      "speaker": "Michael Sheng",
+      "affiliation": "Beijing Normal-Hong Kong Baptist University, China",
+      "time": "11:00-12:00",
+      "title": "A Decade-Long AIoT Research Program for Smart Aging",
+      "abstract": "Through combination of Artificial Intelligence (AI) technologies and the Internet of Things (IoT), the Artificial Intelligence of Things (AIoT) has emerged as an important research and development area for more efficient business operations, improved human-machine interactions, and enhanced data analytics and decision making. In this talk, I will give a brief overview on the history of AI and IoT, report our research activities for more than a decade dedicated to improving the well being and quality of life of aging population, and discuss several important research directions in this research area.",
+      "biography": "Dr Michael Sheng is a Chair Professor and Associate Vice President (Global Engagement) at Beijing Normal-Hong Kong Baptist University. Professor Michael Sheng completed his PhD in Computer Science from UNSW Sydney. He is an internationally recognized computer scientist for his work on advancing Web technologies. His main research areas include services computing, the Internet of Things (IoT), machine learning, and big data analytics. He is best known for his work on Web service composition, a key technical driver for the modern Web-based software industry, and on efficient management of the future Web when billions of IoT objects will be connected to the Internet. His research publications have received over 33,000 citations with an H-index of 82, according to Google Scholar as of Oct 2026, with a strong growth trajectory over recent years. The quality and impact of his work has been recognized through receiving the Chris Wallace Award for Outstanding Research Contribution in 2012, a prestigious award given to only one computer scientist each year working in Australian and New Zealand, and by his inclusion in “The Most Influential Scholars in IoT” prepared by AMiner in 2018, in “The Most Impactful Authors in Services Computing” (ranked top 4 worldwide), prepared by Microsoft Academic in 2021, in “The Highly Ranked Scholar Lifetime in Web Information System” (ranked top 3 worldwide), prepared by ScholarGPS in 2026. His research reputation has attracted many significant appointments from institutes and organizations, as well as invitations to deliver keynote addresses at more than 30 international conferences and events. He served as the Vice Chair of the Executive Committee of the IEEE Technical Community on Services Computing (IEEE TCSVC, 2022-2024) and served on the Technical Advisory Board of the Internet of Things Committee of Australian Computer Society, the peak body for Australia's ICT sector 2019-2025.",
+      "photo": "img/portraits/michael-sheng-adma2026.jpg"
+    },
+    {
+      "id": "pstda-2",
+      "label": "PSTDA Invited Talk 2",
+      "series": "PSTDA",
+      "number": 2,
+      "sessionId": "pstda-2",
+      "source": "resources/1023/2/Invited Talks.docx",
+      "day": 3,
+      "date": "Nov 15, Sunday",
+      "room": "Taipo Room 1+2, 2F",
+      "sessionTime": "14:00-15:30",
+      "speaker": "TBA",
+      "time": "14:00-14:30",
+      "title": "TBA",
+      "abstract": "",
+      "biography": ""
+    },
+    {
+      "id": "pstda-3",
+      "label": "PSTDA Invited Talk 3",
+      "series": "PSTDA",
+      "number": 3,
+      "sessionId": "pstda-3",
+      "source": "resources/1023/2/Invited Talks.docx",
+      "day": 3,
+      "date": "Nov 15, Sunday",
+      "room": "Taipo Room 1+2, 2F",
+      "sessionTime": "16:00-17:30",
+      "speaker": "Didem Gürdür Broo",
+      "affiliation": "Uppsala University, Sweden",
+      "time": "16:00-16:30",
+      "title": "From Digital AI to Physical Agentic Ecosystems",
+      "abstract": "As Artificial Intelligence transitions from digital to physical domains, we face new challenges in creating autonomous systems that can perceive, learn, and act in dynamic real-world environments. This talk explores the emerging field of Physical AI, with particular focus on multi-robot systems where coordination, sustainability, and resilience are critical requirements. Drawing inspiration from natural ecosystems, I will present our approach to symbiotic multi-agent reinforcement learning, where heterogeneous robots develop mutualistic relationships through interaction. Like different species in an ecosystem, specialized robots learn to cooperate for mutual benefit, resulting in emergent system-level properties including improved energy efficiency, fault tolerance, and adaptive behavior. Through concrete examples and experimental results, I will demonstrate how ecology-inspired principles can guide the development of sustainable and resilient autonomous systems that scale effectively and adapt to changing environments.",
+      "biography": "Didem is an Assistant Professor at Uppsala University, where she directs the Cyber-Physical Systems Lab. Her research spans multi-agent systems, bio-inspired algorithm design and physical AI, with a focus on symbiotic, ecocentric approaches to designing intelligent machines that can build and shape collaboration among themselves in dynamic environments. Before joining Uppsala, she was an MSCA Global Fellow at Stanford University and a research associate at the University of Cambridge. She is Editor-in-Chief of the Journal of Industrial Information Integration, an IEEE Senior Member, an ELLIS member and a docent.",
+      "photo": "img/portraits/didem-gurdur-broo-adma2026.jpg"
     }
   ],
   "knownIssues": [

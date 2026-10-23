@@ -14,6 +14,8 @@
 
   const paperById = new Map(data.papers.map((paper) => [paper.id, paper]));
   const specialSessions = data.specialSessions || [];
+  const invitedTalks = data.invitedTalks || [];
+  const invitedTalkById = new Map(invitedTalks.map((talk) => [talk.id, talk]));
   const siteLinkClass = "adma-site-link";
 
   function pageHeading(title, introduction, centered = false) {
@@ -146,7 +148,11 @@
 
     const typeOrder = { keynote: 0, tutorial: 1, special: 2, paper: 3, poster: 4 };
     for (const record of records) {
-      const itemText = record.items?.map((item) => item.kind === "paper" ? programPaperText(item.paperId) : item.label).join(" ") || "";
+      const itemText = record.items?.map((item) => {
+        if (item.kind === "paper") return programPaperText(item.paperId);
+        const talk = invitedTalkById.get(item.talkId);
+        return [item.label, talk?.title, talk?.speaker, talk?.affiliation, talk?.abstract].join(" ");
+      }).join(" ") || "";
       const paperText = record.paperIds?.map(programPaperText).join(" ") || "";
       record.searchText = normalizeProgramSearch([
         record.label,
@@ -331,7 +337,14 @@
       <ol class="adma-session-paper-list adma-special-session-list text-orgSmall">
         ${items.map((item) => {
           if (item.kind === "invited") {
-            return `<li class="adma-invited-talk"><strong>${escapeHtml(item.label)}</strong></li>`;
+            const talk = invitedTalkById.get(item.talkId);
+            if (!talk) return `<li class="adma-invited-talk"><strong>${escapeHtml(item.label)}</strong></li>`;
+            return `
+              <li class="adma-invited-talk">
+                <strong><a class="${siteLinkClass}" href="./invited_talks.html#invited-talk-${escapeHtml(talk.id)}">${escapeHtml(talk.label)}: ${escapeHtml(talk.title)}</a></strong>
+                <span class="adma-session-paper-authors">${escapeHtml([talk.speaker, talk.affiliation].filter(Boolean).join(" · "))}</span>
+                <span class="adma-session-paper-type">${escapeHtml(talk.time ? formatTimeRange(talk.time) : talk.duration)}</span>
+              </li>`;
           }
           const paper = paperById.get(item.paperId);
           return paper ? `
@@ -509,7 +522,7 @@
 
   function renderProgramDetails() {
     root.innerHTML = `
-      ${pageHeading("ADMA 2026 Conference Program", "Browse the full schedule, search session content, and open detailed paper, poster, special sessions, keynote, and tutorial information.")}
+      ${pageHeading("ADMA 2026 Conference Program", "Browse the full schedule, search session content, and open detailed paper, poster, special sessions, invited talk, keynote, and tutorial information.")}
       <nav class="adma-program-nav" aria-label="Program navigation and search">
         <div class="adma-program-jump-links">
           <a href="#program-overview">Program Overview</a>
@@ -525,7 +538,7 @@
       </nav>
       <section id="program-overview" aria-labelledby="program-overview-heading">
         ${sectionHeading("Program Overview", "program-overview-heading")}
-        <p class="adma-program-lead">Select a day, then choose a session to open its details. Keynotes and Tutorials link to their dedicated pages.</p>
+        <p class="adma-program-lead">Select a day, then choose a session to open its details. Keynotes and Tutorials link to their dedicated pages. Special Session details include links to Invited Talks.</p>
         <div class="adma-program-legend" aria-label="Program type legend">
           ${programTypes.filter((type) => type.id !== "all").map((type) => `<span class="adma-legend-${type.id}"><i aria-hidden="true"></i>${escapeHtml(type.label)}</span>`).join("")}
         </div>
@@ -654,11 +667,35 @@
         </section>`).join("")}`;
   }
 
+  function renderInvitedTalks() {
+    root.innerHTML = `
+      ${pageHeading("ADMA2026 Invited Talks", "Explore the invited talks in the RDI and PSTDA special sessions.", true)}
+      <p class="mb-4 text-center"><strong>Jump to:</strong> ${invitedTalks.map((talk) => `<a class="${siteLinkClass}" href="#invited-talk-${escapeHtml(talk.id)}">${escapeHtml(talk.label)}</a>`).join(" · ")}</p>
+      ${invitedTalks.map((talk) => `
+        <section class="pt-9" id="invited-talk-${escapeHtml(talk.id)}" aria-labelledby="invited-talk-${escapeHtml(talk.id)}-title">
+          <p class="adma-keynote-day font-headingStyle text-mainPurple font-bold">Day${escapeHtml(talk.day)}</p>
+          <div${talk.photo ? ' class="adma-keynote-header"' : ""}>
+            ${talk.photo ? `<div class="adma-keynote-portrait"><img class="rounded-lg" src="${escapeHtml(talk.photo)}" alt="Portrait of ${escapeHtml(talk.speaker)}" loading="lazy"></div>` : ""}
+            <div class="adma-keynote-summary">
+              <h2 class="adma-keynote-title font-headingStyle text-mainPurple font-bold" id="invited-talk-${escapeHtml(talk.id)}-title">${escapeHtml(talk.label)}: ${escapeHtml(talk.title)}</h2>
+              <p class="mb-4">${talk.time ? "" : "Session: "}${escapeHtml(talk.date)} · ${escapeHtml(talk.time || talk.sessionTime)} · ${escapeHtml(talk.room)}</p>
+              <p class="text-xl font-bold mb-2">Speaker: ${escapeHtml(talk.speaker)}</p>
+              ${talk.affiliation ? `<p class="mb-2">${escapeHtml(talk.affiliation)}</p>` : ""}
+              ${talk.duration ? `<p class="mb-2"><strong>Talk Duration:</strong> ${escapeHtml(talk.duration)}</p>` : ""}
+              <p class="mb-4"><a class="${siteLinkClass}" href="./program_details.html#special-session-${escapeHtml(talk.sessionId)}">View special session in Program Details</a></p>
+            </div>
+          </div>
+          ${talk.abstract ? contentBlock("Abstract", textParagraphs(talk.abstract)) : ""}
+          ${talk.biography ? contentBlock("Biography", textParagraphs(talk.biography)) : ""}
+        </section>`).join("")}`;
+  }
+
   const renderers = {
     "accepted-papers": renderAcceptedPapers,
     "program-details": renderProgramDetails,
     tutorials: renderTutorials,
     keynotes: renderKeynotes,
+    "invited-talks": renderInvitedTalks,
   };
   const render = renderers[root.dataset.admaPage];
   if (render) render();

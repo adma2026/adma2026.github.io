@@ -640,7 +640,7 @@ a.adma-overview-card:hover {
 }
 
 #keynote-3 .adma-keynote-portrait img {
-  object-position: center 12%;
+  object-position: 20% top;
 }
 
 .adma-keynote-day {
@@ -753,7 +753,8 @@ a.adma-overview-card:hover {
 }
 
 @media (max-width: 768px) {
-  [data-adma-page="keynotes"] .adma-content-block {
+  [data-adma-page="keynotes"] .adma-content-block,
+  [data-adma-page="invited-talks"] .adma-content-block {
     text-align: left;
   }
 }
