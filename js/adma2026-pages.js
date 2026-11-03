@@ -151,7 +151,7 @@
       const itemText = record.items?.map((item) => {
         if (item.kind === "paper") return programPaperText(item.paperId);
         const talk = invitedTalkById.get(item.talkId);
-        return [item.label, talk?.title, talk?.speaker, talk?.affiliation, talk?.abstract].join(" ");
+        return [item.label, talk?.presentationLabel, talk?.title, talk?.speaker, talk?.affiliation, talk?.abstract].join(" ");
       }).join(" ") || "";
       const paperText = record.paperIds?.map(programPaperText).join(" ") || "";
       record.searchText = normalizeProgramSearch([
@@ -341,9 +341,9 @@
             if (!talk) return `<li class="adma-invited-talk"><strong>${escapeHtml(item.label)}</strong></li>`;
             return `
               <li class="adma-invited-talk">
-                <strong><a class="${siteLinkClass}" href="./invited_talks.html#invited-talk-${escapeHtml(talk.id)}">${escapeHtml(talk.label)}: ${escapeHtml(talk.title)}</a></strong>
+                <strong><a class="${siteLinkClass}" href="./invited_talks.html#invited-talk-${escapeHtml(talk.id)}">${escapeHtml(talk.label)}${talk.presentationLabel ? ` (${escapeHtml(talk.presentationLabel)})` : ""}: ${escapeHtml(talk.title)}</a></strong>
                 <span class="adma-session-paper-authors">${escapeHtml([talk.speaker, talk.affiliation].filter(Boolean).join(" · "))}</span>
-                <span class="adma-session-paper-type">${escapeHtml(talk.time ? formatTimeRange(talk.time) : talk.duration)}</span>
+                <span class="adma-session-paper-type">${escapeHtml(talk.timeText || (talk.time ? formatTimeRange(talk.time) : talk.duration))}</span>
               </li>`;
           }
           const paper = paperById.get(item.paperId);
@@ -678,9 +678,11 @@
             ${talk.photo ? `<div class="adma-keynote-portrait"><img class="rounded-lg" src="${escapeHtml(talk.photo)}" alt="Portrait of ${escapeHtml(talk.speaker)}" loading="lazy"></div>` : ""}
             <div class="adma-keynote-summary">
               <h2 class="adma-keynote-title font-headingStyle text-mainPurple font-bold" id="invited-talk-${escapeHtml(talk.id)}-title">${escapeHtml(talk.label)}: ${escapeHtml(talk.title)}</h2>
-              <p class="mb-4">${talk.time ? "" : "Session: "}${escapeHtml(talk.date)} · ${escapeHtml(talk.time || talk.sessionTime)} · ${escapeHtml(talk.room)}</p>
+              ${talk.presentationLabel ? `<p class="mb-2 font-bold">${escapeHtml(talk.presentationLabel)}</p>` : ""}
+              <p class="mb-4">${talk.time ? "" : "Session: "}${escapeHtml(talk.dateText || talk.date)} · ${escapeHtml(talk.timeText || talk.time || talk.sessionTime)} · ${escapeHtml(talk.room)}</p>
               <p class="text-xl font-bold mb-2">Speaker: ${escapeHtml(talk.speaker)}</p>
               ${talk.affiliation ? `<p class="mb-2">${escapeHtml(talk.affiliation)}</p>` : ""}
+              ${talk.email ? `<p class="mb-2">Email: <a class="${siteLinkClass}" href="mailto:${escapeHtml(talk.email)}">${escapeHtml(talk.email)}</a></p>` : ""}
               ${talk.duration ? `<p class="mb-2"><strong>Talk Duration:</strong> ${escapeHtml(talk.duration)}</p>` : ""}
               <p class="mb-4"><a class="${siteLinkClass}" href="./program_details.html#special-session-${escapeHtml(talk.sessionId)}">View special session in Program Details</a></p>
             </div>

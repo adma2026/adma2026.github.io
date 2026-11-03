@@ -2,9 +2,9 @@
 window.ADMA2026Content = {
   "meta": {
     "conference": "ADMA 2026",
-    "generatedAt": "2026-10-23",
+    "generatedAt": "2026-11-03",
     "publicationStatus": "review-preview",
-    "sourceRoot": "resources/1014, resources/1015/special-sessions, resources/1016/2, and resources/1023 (read-only)"
+    "sourceRoot": "resources/1014, resources/1015/special-sessions, resources/1016/2, resources/1023, and resources/1103 (read-only)"
   },
   "papers": [
     {
@@ -3013,7 +3013,7 @@ window.ADMA2026Content = {
       "series": "PSTDA",
       "number": 1,
       "sessionId": "pstda-1",
-      "source": "resources/1023/2/Invited Talks.docx",
+      "source": "resources/1103/ADMA-Keynote-Xiang(1).docx",
       "day": 3,
       "date": "Nov 15, Sunday",
       "room": "Riverside Ballroom, 1F",
@@ -3022,9 +3022,13 @@ window.ADMA2026Content = {
       "affiliation": "Beijing Normal-Hong Kong Baptist University, China",
       "time": "11:00-12:00",
       "title": "A Decade-Long AIoT Research Program for Smart Aging",
-      "abstract": "Through combination of Artificial Intelligence (AI) technologies and the Internet of Things (IoT), the Artificial Intelligence of Things (AIoT) has emerged as an important research and development area for more efficient business operations, improved human-machine interactions, and enhanced data analytics and decision making. In this talk, I will give a brief overview on the history of AI and IoT, report our research activities for more than a decade dedicated to improving the well being and quality of life of aging population, and discuss several important research directions in this research area.",
+      "abstract": "Through combination of artificial intelligence (AI) technologies and the Internet of Things (IoT), the Artificial Intelligence of Things (AIoT) has emerged as an important research and development area for more efficient business operations, improved human-machine interactions, and enhanced data analytics and decision making. In this talk, I will give a brief overview on the history of AI and IoT, report our research activities for more than a decade dedicated to improving the well being and quality of life of aging population, and discuss several important research directions in this research area.",
       "biography": "Dr Michael Sheng is a Chair Professor and Associate Vice President (Global Engagement) at Beijing Normal-Hong Kong Baptist University. Professor Michael Sheng completed his PhD in Computer Science from UNSW Sydney. He is an internationally recognized computer scientist for his work on advancing Web technologies. His main research areas include services computing, the Internet of Things (IoT), machine learning, and big data analytics. He is best known for his work on Web service composition, a key technical driver for the modern Web-based software industry, and on efficient management of the future Web when billions of IoT objects will be connected to the Internet. His research publications have received over 33,000 citations with an H-index of 82, according to Google Scholar as of Oct 2026, with a strong growth trajectory over recent years. The quality and impact of his work has been recognized through receiving the Chris Wallace Award for Outstanding Research Contribution in 2012, a prestigious award given to only one computer scientist each year working in Australian and New Zealand, and by his inclusion in “The Most Influential Scholars in IoT” prepared by AMiner in 2018, in “The Most Impactful Authors in Services Computing” (ranked top 4 worldwide), prepared by Microsoft Academic in 2021, in “The Highly Ranked Scholar Lifetime in Web Information System” (ranked top 3 worldwide), prepared by ScholarGPS in 2026. His research reputation has attracted many significant appointments from institutes and organizations, as well as invitations to deliver keynote addresses at more than 30 international conferences and events. He served as the Vice Chair of the Executive Committee of the IEEE Technical Community on Services Computing (IEEE TCSVC, 2022-2024) and served on the Technical Advisory Board of the Internet of Things Committee of Australian Computer Society, the peak body for Australia's ICT sector 2019-2025.",
-      "photo": "img/portraits/michael-sheng-adma2026.jpg"
+      "photo": "img/portraits/michael-sheng-adma2026.jpg",
+      "presentationLabel": "On-Site keynote",
+      "email": "michaelsheng@bnbu.edu.cn",
+      "dateText": "15th Nov 2026",
+      "timeText": "11:00 - 12:00"
     },
     {
       "id": "pstda-2",
@@ -3032,16 +3036,21 @@ window.ADMA2026Content = {
       "series": "PSTDA",
       "number": 2,
       "sessionId": "pstda-2",
-      "source": "resources/1023/2/Invited Talks.docx",
+      "source": "resources/1103/ADMA-Keynote-Xiang(1).docx",
       "day": 3,
       "date": "Nov 15, Sunday",
       "room": "Taipo Room 1+2, 2F",
       "sessionTime": "14:00-15:30",
-      "speaker": "TBA",
+      "speaker": "Houbing Herbert Song",
       "time": "14:00-14:30",
-      "title": "TBA",
-      "abstract": "",
-      "biography": ""
+      "title": "Enabling Trustworthy Systems through Neuro-Symbolic AI",
+      "abstract": "As AI systems take consequential actions, their ability to learn must be matched by their ability to reason, respect constraints, and support verification. Neuro-symbolic AI addresses this challenge by integrating neural learning with explicit knowledge, symbolic reasoning, and assurance mechanisms. This keynote presents our research toward trustworthy systems that learn, plan, and adapt while remaining accountable to defined requirements. I will connect neuro-symbolic reinforcement learning and planning with compositional reasoning and the verification, validation, testing, and evaluation of hybrid AI. I will then introduce ANNEAL, which enables large language model agents to address recurring failures through governed repairs to symbolic process knowledge, with validation, provenance, and rollback. Applications in cybersecurity and scientific discovery will illustrate how learning and domain knowledge jointly support reasoning, decisions, and assessment. The talk concludes with open research questions and a vision for adaptive systems whose capabilities are accompanied by evidence of reliability, security, and adherence to requirements.",
+      "biography": "Houbing Herbert Song is a tenured Full Professor and Director of the Security and Optimization for Networked Globe Laboratory (SONG Lab) at the University of Maryland, Baltimore County (UMBC). His research focuses on neuro-symbolic AI, anomaly detection, Artificial Intelligence of Things, and autonomous and cyber-physical systems. He serves as Editor-in-Chief of IEEE Internet of Things Magazine (2027-present), Co-Editor-in-Chief of IEEE Transactions on Industrial Informatics (2025-present), and Area Editor of IEEE Internet of Things Journal. He is also an Associate Editor of ACM Transactions on Internet Technology, IEEE Transactions on Artificial Intelligence, and IEEE Journal on Miniaturization for Air and Space Systems. He is the Founding Chair of ACM Emerging Interest Group on Trustworthy and Responsible Systems (EIGTRUST, https://eigtrust.acm.org/) and the IEEE Trustworthy Internet of Things Working Group, and the founder and General Chair of ACM TRUST 2027 (https://eigtrust.acm.org/trust2027), the inaugural ACM International Conference on Trustworthy and Responsible AI and Computing Systems. Professor Song is an IEEE Fellow, an ACM Distinguished Member, and a Clarivate Highly Cited Researcher. He is an ACM Distinguished Speaker, an IEEE Computer Society Distinguished Visitor, and an IEEE Distinguished Lecturer for the Computational Intelligence, Communications, Intelligent Transportation Systems, and Vehicular Technology Societies, as well as the Systems Council. He received his Ph.D. in electrical engineering from the University of Virginia in 2012. His honors include the IEEE Harry Rowe Mimno Award and more than ten Best Paper Awards.",
+      "presentationLabel": "Online Keynote 1",
+      "affiliation": "University of Maryland Baltimore County, USA",
+      "email": "songh@umbc.edu",
+      "dateText": "15th Nov 2026",
+      "timeText": "14:00 - 14:30"
     },
     {
       "id": "pstda-3",
@@ -3049,7 +3058,7 @@ window.ADMA2026Content = {
       "series": "PSTDA",
       "number": 3,
       "sessionId": "pstda-3",
-      "source": "resources/1023/2/Invited Talks.docx",
+      "source": "resources/1103/ADMA-Keynote-Xiang(1).docx",
       "day": 3,
       "date": "Nov 15, Sunday",
       "room": "Taipo Room 1+2, 2F",
@@ -3058,9 +3067,13 @@ window.ADMA2026Content = {
       "affiliation": "Uppsala University, Sweden",
       "time": "16:00-16:30",
       "title": "From Digital AI to Physical Agentic Ecosystems",
-      "abstract": "As Artificial Intelligence transitions from digital to physical domains, we face new challenges in creating autonomous systems that can perceive, learn, and act in dynamic real-world environments. This talk explores the emerging field of Physical AI, with particular focus on multi-robot systems where coordination, sustainability, and resilience are critical requirements. Drawing inspiration from natural ecosystems, I will present our approach to symbiotic multi-agent reinforcement learning, where heterogeneous robots develop mutualistic relationships through interaction. Like different species in an ecosystem, specialized robots learn to cooperate for mutual benefit, resulting in emergent system-level properties including improved energy efficiency, fault tolerance, and adaptive behavior. Through concrete examples and experimental results, I will demonstrate how ecology-inspired principles can guide the development of sustainable and resilient autonomous systems that scale effectively and adapt to changing environments.",
+      "abstract": "As artificial intelligence transitions from digital to physical domains, we face new challenges in creating autonomous systems that can perceive, learn, and act in dynamic real-world environments. This talk explores the emerging field of Physical AI, with particular focus on multi-robot systems where coordination, sustainability, and resilience are critical requirements. Drawing inspiration from natural ecosystems, I will present our approach to symbiotic multi-agent reinforcement learning, where heterogeneous robots develop mutualistic relationships through interaction. Like different species in an ecosystem, specialized robots learn to cooperate for mutual benefit, resulting in emergent system-level properties including improved energy efficiency, fault tolerance, and adaptive behavior. Through concrete examples and experimental results, I will demonstrate how ecology-inspired principles can guide the development of sustainable and resilient autonomous systems that scale effectively and adapt to changing environments.",
       "biography": "Didem is an Assistant Professor at Uppsala University, where she directs the Cyber-Physical Systems Lab. Her research spans multi-agent systems, bio-inspired algorithm design and physical AI, with a focus on symbiotic, ecocentric approaches to designing intelligent machines that can build and shape collaboration among themselves in dynamic environments. Before joining Uppsala, she was an MSCA Global Fellow at Stanford University and a research associate at the University of Cambridge. She is Editor-in-Chief of the Journal of Industrial Information Integration, an IEEE Senior Member, an ELLIS member and a docent.",
-      "photo": "img/portraits/didem-gurdur-broo-adma2026.jpg"
+      "photo": "img/portraits/didem-gurdur-broo-adma2026.jpg",
+      "presentationLabel": "Online Keynote 2",
+      "email": "didem.gurdur.broo@it.uu.se",
+      "dateText": "15th Nov 2026",
+      "timeText": "16:00 - 16:30"
     }
   ],
   "knownIssues": [
