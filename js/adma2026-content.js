@@ -3050,7 +3050,8 @@ window.ADMA2026Content = {
       "affiliation": "University of Maryland Baltimore County, USA",
       "email": "songh@umbc.edu",
       "dateText": "15th Nov 2026",
-      "timeText": "14:00 - 14:30"
+      "timeText": "14:00 - 14:30",
+      "photo": "img/portraits/houbing-herbert-song.jpg"
     },
     {
       "id": "pstda-3",
