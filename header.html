@@ -1,4 +1,7 @@
 <header>
+  <style>
+    #proceedings-dropdown:focus-within .dropdown-menu { display: block; }
+  </style>
   <nav class="j_navbar j_uq_color_bg">
     <div class="max-w-9xl mx-auto px-2 sm:px-6 lg:px-12">
       <div class="relative flex items-center justify-between h-16">
@@ -434,17 +437,34 @@
               <!-- <a aria-current="page" class="flex item-center" title="Speakers" href="/highlights.html">
                           <span class=" text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle">Highlights</span>
                         </a> -->
-              <a
-                aria-current="page"
-                class="flex item-center"
-                title="Previous ADMA"
-                href="/previous_adma.html"
-              >
-                <span
-                  class="text-white text-base hover:bg-menuHover px-3 py-2 rounded-md font-medium font-headingStyle"
-                  >Previous ADMA</span
+              <div class="group dropdown inline-block relative" id="proceedings-dropdown">
+                <button
+                  type="button"
+                  aria-controls="proceedings-menu"
+                  class="text-white text-base group-hover:bg-menuHover pl-3 pr-2 py-2 rounded-md text-sm font-medium font-headingStyle inline-flex items-center cursor-default"
                 >
-              </a>
+                  <span class="mr-1">Proceedings</span>
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+                  </svg>
+                </button>
+                <div class="dropdown-menu absolute hidden text-gray-800 pt-1" id="proceedings-menu" style="right:0;width:12rem">
+                  <div class="rounded shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5">
+                    <a
+                      class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                      title="Previous ADMA"
+                      href="/previous_adma.html"
+                      >Previous ADMA</a
+                    >
+                    <a
+                      class="font-headingStyle hover:bg-gray-100 py-1.5 px-4 block whitespace-no-wrap text-orgSmall"
+                      title="ADMA2026"
+                      href="/proceedings.html"
+                      >ADMA2026</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -746,16 +766,23 @@
             >Attractions</span
           >
         </a>
-        <a
+        <button
+          type="button"
           class="flex item-center w-full"
-          title="Previous ADMA"
-          href="/previous_adma.html"
+          onclick="toggle_mobile_section('mobile_proceedings_links')"
+          aria-controls="mobile_proceedings_links"
+          aria-expanded="false"
         >
-          <span
-            class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle"
-            >Previous ADMA</span
-          >
-        </a>
+          <span class="pl-8 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle" style="text-align:left">Proceedings</span>
+        </button>
+        <div id="mobile_proceedings_links" class="hidden">
+          <a class="flex item-center w-full" title="Previous ADMA" href="/previous_adma.html">
+            <span class="pl-12 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">Previous ADMA</span>
+          </a>
+          <a class="flex item-center w-full" title="ADMA2026" href="/proceedings.html">
+            <span class="pl-12 pr-4 py-2 w-full text-white block rounded-md text-base font-semibold font-headingStyle">ADMA2026</span>
+          </a>
+        </div>
         <a
           class="flex item-center w-full"
           title="more"
